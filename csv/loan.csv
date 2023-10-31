@@ -1,0 +1,10 @@
+"contract_id","lender","owned_company","contract_number","down_payment","financed_amount","interest_rate","loan_term","monthly_payment","remaining_payments","start_date"
+1,"Ally Auto","Land Crafters","228-1286-85904",,27222.75,8.49,60,560.34,,"2022-08-31"
+2,"Ally Auto","Land Crafters","228-0931-44939",,80300.1,5.84,60,1550.2,,"2022-03-31"
+3,"Ally Auto","Land Crafters","228-1244-15775",,76419.38,17.99,72,1755.39,,"2022-08-10"
+4,"Ally Auto","Land Crafters","228-1284-75831",,53088.78,8.49,60,1092.76,,"2022-08-31"
+5,"Ally Auto","Land Crafters","228-1289-05761",,53088.78,8.49,60,1092.76,,"2022-08-31"
+6,"Ally Auto","Nest Homes","228-1288-35812",,66442.82,7.99,75,1128.32,,"2022-03-31"
+7,"Amur","Sidenbury Holdings","1084536",,148747.58,,72,2803.72,,
+8,"Amur","Nest Homes","1074848",,233341.62,,60,4948.5,,
+9,"Balboa Capital","Nest Homes","350115-001",0,32735.1,7.95,48,798.39,,
