@@ -3,7 +3,7 @@ from django.db import models
 # Create your models here.
 class Loan(models.Model):
     contract_id = models.AutoField(primary_key=True)
-    lender = models.CharField(max_length=30)
+    lender = models.CharField(max_length=40)
     owned_company = models.CharField(max_length=25)
     contract_number = models.CharField(max_length=20)
     start_date = models.DateField(blank=True,null=True)
