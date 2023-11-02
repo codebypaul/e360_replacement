@@ -1,0 +1,63 @@
+﻿lender,owned_company,contract_number,down_payment,financed_amount,interest_rate,loan_term,monthly_payment,remaining_payments,start_date
+Balboa Capital,Nest Homes,350115-002,0,23445,7.95,36,734.14,,
+Balboa Capital,Nest Homes,350115-003,0,84894.25,7,60,1681.01,,
+Balboa Capital,Nest Homes,350115-005,0,9075,7,24,406.31,,10/29/21
+Balboa Capital,Nest Homes,350115-006,0,23495,8.95,60,487.15,,11/23/21
+Balboa Capital,Nest Homes,350115-007,0,52660,8.95,36,1673.35,,11/24/21
+Balboa Capital,Nest Homes,350115-009,0,37885.1,7.69,60,762.56,,1/15/22
+Balboa Capital,Nest Homes,350115-010,0,46307.51,7.69,60,932.09,,1/20/22
+Balboa Capital,Nest Homes,350115-011,0,41495.25,7.69,60,835.23,,1/20/22
+Balboa Capital,Nest Homes,350115-012,0,98028.5,7.69,60,1973.15,,1/28/22
+Balboa Capital,Nest Homes,350115-013,0,50245.1,7.95,60,1017.59,,2/17/22
+Balboa Capital,Nest Homes,350115-016,0,78190,10.95,48,2018.96,,7/20/22
+Balboa Capital,Land Crafters,367327-001,0,86167.85,7.95,60,1745.11,,4/20/22
+CAT Financial,Land Crafters,001-70040199,0,138107.5,4.5,60,2574.74,,
+CAT Financial,Land Crafters,001-70040201,0,139175,4.5,60,2594.64,,
+CAT Financial,Land Crafters,001-70053189,0,84795.07,0,60,1413.25,,
+CAT Financial,Land Crafters,001-70059838,0,73481.29,0,60,1224.69,,
+CAT Financial,Land Crafters,001-70060618,44829.05,202339.99,4.9,60,3809.14,,
+CAT Financial,Land Crafters,001-70067270,0,43014.6,5.65,55,889.54,,
+CAT Financial,Land Crafters,001-70068568,0,60886.03,5.65,55,1259.12,,
+CIT (First Citizens),Nest Homes,083-0008366-000,,,,60,909.72,,
+CIT (First Citizens),Nest Homes,083-0008497-000,,,,60,1685.93,,
+CIT (First Citizens),Nest Homes,083-0008561-000,,,,60,1375.43,,
+CIT (First Citizens),Nest Homes,083-0008811-000,,,,60,627.69,,
+CIT (First Citizens),Nest Homes,083-0009034-000,,,,60,1358.07,,
+CIT (First Citizens),Nest Homes,083-0009597-000,,,,60,1963.29,,
+CIT (First Citizens),Nest Homes,083-0009694-000,,,,60,1070.73,,
+CIT (First Citizens),Nest Homes,083-0009796-000,,,,60,5279.36,,
+CIT (First Citizens),Nest Homes,083-0010282-000,,,,48,1919.18,,
+CIT (First Citizens),Nest Homes,083-0010318-000,,,,60,3286.82,,
+CIT (First Citizens),Land Crafters,083-0010882-000,,,4.95,36,2131.35,,
+CIT (First Citizens),Nest Homes,083-0012027-000,,,,60,1277.08,,
+CIT (First Citizens),Nest Homes,083-0012144-000,,,,60,823.15,,5/12/22
+CIT (First Citizens),Nest Homes,083-0012341-000,,,,60,1442.61,,
+CIT (First Citizens),Nest Homes,097-0148201-000,,,,60,997.55,,
+CIT (First Citizens),Nest Homes,097-0149129-000,,,,48,2599.43,,
+CIT (First Citizens),Nest Homes,097-0149668-000,,,,36,1276.75,,
+CNH Industrial Capital America LLC,Sidenbury Holdings,234501,0,70286,0,60,1152.23,,
+CNH Industrial Capital America LLC,Nest Homes,239189,7199,312718.02,5.99,60,5211.96,,
+CNH Industrial Capital America LLC,Sidenbury Holdings,275758,0,169581.23,3.99,60,2826.35,,
+CNH Industrial Capital America LLC,Land Crafters,287837,0,220624.94,3.99,60,3677.08,,
+CNH Industrial Capital America LLC,Land Crafters,287839,0,198699.61,3.99,60,3311.66,,
+CNH Industrial Capital America LLC,Land Crafters,287840,0,71168.79,3.99,60,1186.15,,
+CNH Industrial Capital America LLC,Land Crafters,287843,0,212742.56,3.99,60,3545.71,,
+CNH Industrial Capital America LLC,Land Crafters,287846,0,138423.76,3.99,60,2307.06,,12/24/21
+CNH Industrial Capital America LLC,Sidenbury Holdings,313571,0,713287.35,4.54,60,11888.13,,5/1/22
+CNH Industrial Capital America LLC,Sidenbury Holdings,314989,0,334794.46,4.79,60,5579.9,,5/5/22
+CNH Industrial Capital America LLC,Sidenbury Holdings,315616,0,101820.78,4.79,60,1697.02,,5/8/22
+CNH Industrial Capital America LLC,Sidenbury Holdings,321403,0,156073.76,5.59,60,2601.23,,6/5/22
+Equify,Nest Homes,13621L,,,,60,92445,,
+GM Financial,Land Crafters,3764,2250,64451.85,8.99,72,1161.75,,6/1/23
+GM Financial,Land Crafters,5741,2250,64192.29,8.99,72,1157.07,,6/1/23
+GM Financial,Land Crafters,1177,250,70109.38,8.99,72,1263.73,,6/1/23
+Komatsu,Land Crafters,777-0164145-000,0,322283.82,0.99,48,6850.83,,2/10/22
+Komatsu,Land Crafters,777-0164145-001,0,211505.6,0.99,48,4496.01,,2/28/22
+Komatsu,Land Crafters,777-0164145-002,0,186758.81,0.99,48,3969.96,,3/20/22
+Komatsu,Land Crafters,777-0164145-003,0,642663.51,0.99,48,13661.19,,4/5/22
+Komatsu,Land Crafters,777-0164145-004,0,232876.76,1.49,48,5000.62,,6/15/22
+Komatsu,Land Crafters,777-0164145-005,0,383061.96,1.49,48,8225.59,,7/8/22
+Komatsu,Land Crafters,777-0164145-006,0,307444,3.99,48,6940.42,,10/5/22
+Komatsu,Land Crafters,777-0164145-007,0,307444,3.99,48,6940.42,,10/18/22
+Zaxis Finance - Allegiant,Sidenbury Holdings,134908,,,,72,4408.29,,
+Zaxis Finance - Allegiant,Sidenbury Holdings,135310,,,,72,4408.29,,
