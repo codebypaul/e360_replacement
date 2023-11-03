@@ -33,3 +33,30 @@ def equipment_list(request):
     }
 
     return JsonResponse(data)
+
+def vehicle_list(request):
+    """
+    REST API VIEW
+    Consume by JavaScript or Swift/Java/iOS/Android
+    return json data
+    """
+    query_set=Equipment.objects.all()
+    vehicle_list=[
+        {
+            "equipment_id":x.equipment_id,
+            "status":x.status,
+            "vin":x.serial_number,
+            "year":x.year,
+            "description":x.description,
+            "ownership":x.ownership,
+            "mileage":x.hours,
+            # "contract":x.contract,
+        } for x in query_set
+    ]
+
+    data={
+        "isUser":False,
+        "response":vehicle_list
+    }
+
+    return JsonResponse(data)

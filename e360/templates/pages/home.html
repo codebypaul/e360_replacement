@@ -13,6 +13,7 @@ This is amazing
     </div>
 </div>
 
+
 <!-- <div class="row mb-3">
     <div class="col-md-4 mx-auto col-10">
         <form class="form" id='tweet-create-form'  method="POST" action="/create-tweet/">
@@ -25,8 +26,14 @@ This is amazing
 </div> -->
 
 
-<div class ='row' id="list">
-    Loading...
+<div class ='row'>
+    <div class="btn-group" role="group" aria-label="Basic example">
+        <button type="button" class="btn btn-primary" id="equipBtn">Equipment</button>
+        <button type="button" class="btn btn-primary" id="vehicleBtn">Vehicles</button>
+    </div>
+    <div id="list">
+        Loading...
+    </div>
 </div>
 
 <script>
@@ -40,11 +47,23 @@ This is amazing
     // tweetCreateFormEl.addEventListener('submit', handleTweetCreateFormDidSubmit)
 
     const listEl=document.querySelector('#list')
+    const equipBtn=document.querySelector('#equipBtn')
+    const vehicleBtn=document.querySelector('#vehicleBtn')
+
+    let url_end = '/equipment-list'
+    function equipBtnClicked(event){
+        url_end='/equipment-list'
+    }
+    function vehicleBtnClicked(event){
+        url_end='/vehicle-list'
+    }
+    equipBtn.addEventListener('click',equipBtnClicked)
+    vehicleBtn.addEventListener('click',vehicleBtnClicked)
 
     function loadList(listElement) {
         const xhr=new XMLHttpRequest()
         const method ="GET"
-        const url="/equipment-list"
+        const url='/equipment-list'
         const responseType="json"
 
         xhr.responseType=responseType
