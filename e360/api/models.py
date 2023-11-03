@@ -33,17 +33,18 @@ class Equipment(models.Model):
         ('Unknown','Unknown')
     ]
 
-    status = [
+    statuses = [
         ('Active','Active'),
-        ('Retired','Retired')
+        ('Inactive','Inactive')
     ]
     # companies = [
     #     ('Nest Homes','Nest Homes'),
     #     ('Land Crafters','Land Crafters'),
     #     ('Sidenbury','Sidenbury Holdings'),
     # ]
-    equipment_id = models.CharField(primary_key=True,max_length=10, unique =True)
-    status = models.CharField(blank=True,null=True,choices=status)
+    # id = models.CharField(primary_key=True, unique=True,blank=True,null=True)
+    equipment_id = models.CharField(primary_key=True,max_length=10)
+    status = models.CharField(blank=True,null=True,choices=statuses)
     serial_number = models.CharField(max_length=30)
     year = models.PositiveSmallIntegerField(null=True)
     description = models.CharField(max_length=100)
@@ -69,8 +70,13 @@ class Vehicle(models.Model):
     #     ('Land Crafters','Land Crafters'),
     #     ('Sidenbury','Sidenbury Holdings'),
     # ]
-
-    equipment_id = models.CharField(primary_key=True,max_length=10,unique=True)
+    statuses = [
+        ('Active','Active'),
+        ('Inactive','Inactive')
+    ]
+    # id = models.CharField(primary_key=True, unique =True,blank=True,null=True)
+    equipment_id = models.CharField(primary_key=True,max_length=10)
+    status = models.CharField(blank=True,null=True,choices=statuses)
     vin = models.CharField(max_length=17)
     year = models.PositiveSmallIntegerField(null=True)
     description = models.CharField(max_length=100)
@@ -102,3 +108,11 @@ class Location(models.Model):
 #     last_name = models.CharField(max_length=20)
 #     title = models.CharField(max_length=30)
 #     active = models.BooleanField(null=True)
+
+# class Note(models.Model):
+#     equipment = models.ForeignKey(Equipment,on_delete=models.CASCADE)
+#     vehicle = models.ForeignKey(Vehicle,on_delete=models.CASCADE)
+#     resolved = models.BooleanField()
+#     note_text = models.TextField()
+#     date_created = models.DateField(auto_now=False)
+#     date_updated  = models.DateTimeField(auto_now_add=True)
