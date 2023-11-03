@@ -2,6 +2,10 @@ from django.db import models
 
 # Create your models here.
 class Loan(models.Model):
+    loan_statuses = [
+        ('Active','Active'),
+        ('Satisfied','Satisfied')
+    ]
     contract_id = models.AutoField(primary_key=True)
     lender = models.CharField(max_length=40)
     owned_company = models.CharField(max_length=25)
@@ -13,7 +17,8 @@ class Loan(models.Model):
     financed_amount = models.FloatField(blank=True,null=True)
     monthly_payment = models.FloatField(blank=True,null=True)
     remaining_payments = models.PositiveSmallIntegerField(blank=True,null=True)
-
+    loan_status = models.CharField(max_length=20,choices= loan_statuses,blank=True, null=True)
+    loan_satisfied_date = models.DateField(blank=True, null=True)
     def __str__(self):
         return f'{self.lender} - {self.contract_number}'
 
@@ -23,8 +28,14 @@ class Equipment(models.Model):
         ('Rental','Rental'),
         ('InterCo','Inter Company Rental'),
         ('Leased','Leased'),
-        ('Owned','Owned w/ Title'),
+        ('Owned','Owned'),
+        ('Sold','Sold'),
         ('Unknown','Unknown')
+    ]
+
+    status = [
+        ('Active','Active'),
+        ('Retired','Retired')
     ]
     # companies = [
     #     ('Nest Homes','Nest Homes'),
@@ -32,13 +43,15 @@ class Equipment(models.Model):
     #     ('Sidenbury','Sidenbury Holdings'),
     # ]
     equipment_id = models.CharField(primary_key=True,max_length=10, unique =True)
+    status = models.CharField(blank=True,null=True,choices=status)
     serial_number = models.CharField(max_length=30)
     year = models.PositiveSmallIntegerField(null=True)
     description = models.CharField(max_length=100)
     # company_assign = models.CharField(max_length=30, choices=companies)
     ownership = models.CharField(max_length=20,choices=ownership_types)
     hours = models.IntegerField()
-    contract = models.ForeignKey(Loan, blank=True, null=True, on_delete=models.CASCADE, )
+    contract = models.ForeignKey(Loan, blank=True, null=True, on_delete=models.CASCADE)
+    notes = models.TextField(blank=True, null=True)
 
 class Vehicle(models.Model):
     ownership_types = [
@@ -47,6 +60,8 @@ class Vehicle(models.Model):
         ('InterCo','Inter Company Rental'),
         ('Leased','Leased'),
         ('Owned','Owned w/ Title'),
+        ('Newly Owned','Owned w/o Title'),
+        ('Sold','Sold'),
         ('Unknown','Unknown')
     ]
     # companies = [
@@ -63,6 +78,7 @@ class Vehicle(models.Model):
     ownership = models.CharField(max_length=20,choices=ownership_types)
     mileage = models.IntegerField()
     contract = models.ForeignKey(Loan,blank=True,null=True,on_delete=models.CASCADE)
+    notes = models.TextField(blank=True, null=True)
 
 
 

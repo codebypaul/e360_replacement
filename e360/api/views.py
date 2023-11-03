@@ -3,9 +3,9 @@ from django.http import JsonResponse
 
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
-from .serializers import EquipmentSerializer, VehicleSerializer, EmployeeSerializer
+from .serializers import EquipmentSerializer, VehicleSerializer #, EmployeeSerializer
 
-from .models import Equipment, Vehicle, Employee
+from .models import Equipment, Vehicle #, Employee
 # Create your views here.
 
 @api_view(['GET'])
