@@ -7,6 +7,7 @@ class Loan(models.Model):
         ('Satisfied','Satisfied')
     ]
     contract_id = models.AutoField(primary_key=True)
+    link_to_contract=models.URLField(max_length=300,blank=True,null=True)
     lender = models.CharField(max_length=40)
     owned_company = models.CharField(max_length=25)
     contract_number = models.CharField(max_length=20)
