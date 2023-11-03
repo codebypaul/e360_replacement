@@ -37,6 +37,9 @@ def equipmentList(request):
     serializer = EquipmentSerializer(equipment, many=True)
     return Response(serializer.data)
 
+    
+    
+
 @api_view(['GET'])
 def equipmentDetail(request,pk):
     equipment = Equipment.objects.get(id=pk)
