@@ -1,11 +1,35 @@
 from django.shortcuts import render
 from django.http import JsonResponse
+from django.urls import reverse_lazy
 
+#  Authentication
+from django.contrib.auth.views import LoginView
+from django.contrib.auth.mixins import LoginRequiredMixin
+from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth import login
+
+# models
 from api.models import Equipment, Vehicle
+
+# 
+from django.core.paginator import Paginator
 # Create your views here.
 def home_page(request):
 
     return render(request, 'pages/home.html', context = {}, status = 200)
+
+# Authentication View
+class CustomLoginView(LoginView):
+    template_name = 'auth/login.html'
+    fields = '__all__'
+    redirect_authenticatwed_user = True
+
+    def get_success_url(self):
+        return reverse_lazy('system home page')
+
+# Authenticated User View
+def system(request):
+    return render(request, 'pages/system.html', context = {}, status = 200)
 
 def equipment_list(request):
     """
@@ -60,3 +84,13 @@ def vehicle_list(request):
     }
 
     return JsonResponse(data)
+
+# Admin only
+def admin_panel(request,*args, **kwargs):
+    equipments = Equipment.objects.all()
+    vehicles = Vehicle.objects.all()
+    context={
+        'equipments':equipments,
+        'vehicles':vehicles
+    }
+    return render(request,'admin/admin_panel.html',context=context,status=200)

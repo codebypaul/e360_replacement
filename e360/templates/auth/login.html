@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block head_title %}
+E360 : Login
+{% endblock head_title %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col">
+            <div class="card text-center">
+                <div class="card-header">
+                  <h2>Login</h2>
+                </div>
+                <div class="card-body">
+                  <form action="" method="POST">
+                    {% csrf_token %}
+                    {{form.as_p}}
+                    <button class="btn btn-primary" type="submit">Login</button>
+                  </form>
+                  <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                </div>
+                <div class="card-footer text-body-secondary">
+                  2 days ago
+                </div>
+              </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}

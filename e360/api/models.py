@@ -20,6 +20,7 @@ class Loan(models.Model):
     remaining_payments = models.PositiveSmallIntegerField(blank=True,null=True)
     loan_status = models.CharField(max_length=20,choices= loan_statuses,blank=True, null=True)
     loan_satisfied_date = models.DateField(blank=True, null=True)
+    
     def __str__(self):
         return f'{self.lender} - {self.contract_number}'
 
@@ -55,6 +56,12 @@ class Equipment(models.Model):
     contract = models.ForeignKey(Loan, blank=True, null=True, on_delete=models.CASCADE)
     notes = models.TextField(blank=True, null=True)
 
+    def __str__(self):
+        self.equipment_id
+    
+    class Meta:
+        ordering=['equipment_id']
+
 class Vehicle(models.Model):
     ownership_types = [
         ('Financed','Financed'),
@@ -86,6 +93,12 @@ class Vehicle(models.Model):
     mileage = models.IntegerField()
     contract = models.ForeignKey(Loan,blank=True,null=True,on_delete=models.CASCADE)
     notes = models.TextField(blank=True, null=True)
+
+    def __str__(self):
+        self.equipment_id
+    
+    class Meta:
+        ordering=['equipment_id']
 
 
 

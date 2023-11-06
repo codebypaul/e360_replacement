@@ -1,0 +1,158 @@
+{% extends 'base.html' %}
+
+{% block head_title %}
+Admin Panel
+{% endblock head_title %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-2">
+            <h5>
+                Menu
+            </h5>
+        </div>
+        <div class="col-10">
+            <div class="row">
+
+            </div>
+
+            <div class="row">
+                <div class="col-3">
+                    <div class="card">
+                        <div class="card-header">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card">
+                        <div class="card-header">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card">
+                        <div class="card-header">
+                            <h2>Payments Made this Month</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card">
+                        <div class="card-header">
+                            <h2>
+                                Payments Made YTD
+                            </h2>
+                        </div>
+                        <div class="card-body">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- equipment -->
+            <div class="row" id="equipment">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-header">
+                            <h2>Equipment</h2>
+                        </div>
+                        <div class="card-body">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Equipment ID</th>
+                                        <th scope="col">Serial Number</th>
+                                        <th scope="col">Year</th>
+                                        <th scope="col">Description</th>
+                                        <th scope="col">Ownership</th>
+                                        <th scope="col">Hours</th>
+                                        <th scope="col">Contract</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {% for equipment in equipments %}
+                                    <tr>
+                                        <th scope="row">{{equipment.equipment_id}}</th>
+                                        <td>{{equipment.serial_number}}</td>
+                                        <td>{{equipment.year}}</td>
+                                        <td>{{equipment.description}}</td>
+                                        <td>{{equipment.ownership}}</td>
+                                        <td>{{equipment.hours}}</td>
+                                        <td>{{equipment.contract_id}}</td>
+                                    </tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="card-footer ">
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination">
+                                    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <!-- vehicles -->
+            <div class="row" id="vehicles">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-header">
+                            <h2>Vehicles</h2>
+                        </div>
+                        <div class="card-body">
+                            <table class="table">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">Equipment ID</th>
+                                    <th scope="col">VIN</th>
+                                    <th scope="col">Year</th>
+                                    <th scope="col">Description</th>
+                                    <th scope="col">Ownership</th>
+                                    <th scope="col">Mileage</th>
+                                    <th scope="col">Contract</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                    {% for vehicle in vehicles %}
+                                  <tr>
+                                    <th scope="row">{{vehicle.equipment_id}}</th>
+                                    <td>{{vehicle.vin}}</td>
+                                    <td>{{vehicle.year}}</td>
+                                    <td>{{vehicle.description}}</td>
+                                    <td>{{vehicle.ownership}}</td>
+                                    <td>{{vehicle.mileage}}</td>
+                                    <td>{{vehicle.contract_id}}</td>
+                                  </tr>
+                                  {% endfor %}
+                                </tbody>
+                              </table>
+                        </div>
+                        <div class="card-footer ">
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination">
+                                    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+{% endblock content %}
