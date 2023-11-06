@@ -1,176 +1,176 @@
-"equipment_id","serial_number","year","description","company_assign","ownership","hours"
-"ACC-01","-0",0,"Forestry Head Accessory","-","-",0
-"ACC-02","-1",0,"Bush Hog Attachment","-","-",0
-"ACC-03","-2",0,"Mulching Head Accessory","-","-",0
-"ACC-05","-3",0,"Tiller for Skidsteer","-","-",0
-"AIR-01","LV22234NC192219",0,"Ridgid - Air Compressor","-","-",0
-"ATT-01","305764",0,"Spartan Sod Roller","-","-",0
-"ATT-02","KC50767",0,"Stump Bucket","-","-",0
-"BR1-01","PE4045D338795",0,"Rosco Street Sweeper","-","-",0
-"CS-01","42380012821",0,"Stihl TS 420-Z 14'","-","-",0
-"CS-02","192465597",0,"Stihl TS 420-Z 14'","-","-",0
-"DRILL-01","544",0,"Impact Drill Kobalt KID 3","-","-",0
-"DRILL-02","-4",0,"Driver Drill Kobalt KDD","-","-",0
-"DRILL-03","3611B68512",0,"Electric Drill Bosh GBH2-28L","-","-",0
-"DZ1-01","CAT00D6NL5G6007430",2018,"CAT D6N Dozer","Nest Homes","InterCo Rental",4322
-"DZ1-02","JJGN850MEGC103110",2016,"CASE 850M Dozer","Nest Homes","InterCo Rental",3200
-"DZ1-03","B65327",2022,"Komatsu D61 PX  Dozer","Nest Homes","Financed",1979
-"DZ1-04","CAT00D6KK EL700123",2016,"CAT  D6K2 LGP Dozer","Nest Homes","Financed",4640
-"DZ1-05","B65371",2022,"Komatsu D61 PX  Dozer","Nest Homes","Financed",1746
-"DZ1-06","B45413",2022,"Komatsu D61 PX Dozer","Nest Homes","Financed",2475
-"DZ2-01","CAT00D6KEFBH00787",2008,"CAT D6K XL Dozer","Nest Homes","InterCo Rental",9474
-"DZ2-02","CAT00D6KC EL700120",2016,"CAT  D6K Dozer","Nest Homes","Financed",5911
-"DZ2-03","WMR00660",2014,"CAT  D6K2XL","Nest Homes","InterCo Rental",8640
-"DZ2-04","CAT000D3TXKY03018",2022,"CAT D3 Dozer LGP","Nest Homes","InterCo Rental",464
-"DZ2-05","CAT000D3PXKY03019",2022,"CAT D3 Dozer LGP","Nest Homes","InterCo Rental",525
-"DZ2-06","B65710",2022,"Komatsu D61 PX Dozer","Nest Homes","Financed",1400
-"DZ2-10","B65702",2022,"Komatsu D61 Dozer","Nest Homes","Financed",1065
-"DZ3-01","CAT000D3D XKY02744",2022,"CAT D3 LGP Dozer","Nest Homes","InterCo Rental",950
-"DZ3-02","KMT0D122K01090512",2014,"Komatsu D39PX Dozer","Nest Homes","InterCo Rental",7163
-"DZ3-03","CAT000D5VRG901206",2022,"CAT D5 Dozer LGP 3D","Nest Homes","InterCo Rental",1920
-"DZ3-04","CAT000D5CRG901214",2022,"CAT D5 Dozer LGP","Nest Homes","InterCo Rental",1705
-"DZ3-06","080Z00713",1987,"CAT D7 Dozer","Nest Homes","-",6396
-"EX1-01","CAT0349FC BZ220089",2018,"CAT 349F Excavator","Nest Homes","InterCo Rental",4616
-"EX1-02","CAT0330FH HCK20285",2019,"CAT 330F L Excavator","Nest Homes","-",4143
-"EX1-03","K1J15752",2008,"Link Belt 130 Excavator","Nest Homes","InterCo Rental",7141
-"EX1-11","50037",2016,"Komatsu PC138","-","-",3137
-"EX2-01","DAC210K7NMS7H2562",2021,"Case 210D Excavator","Land Crafters","Financed",1595
-"EX2-02","DAC210K7NLS7H2407",2021,"Case 210D Excavator","Land Crafters","Financed",2262
-"EX2-03","DAC210K7NMS7H2531",2021,"Case 210 Excavator","Land Crafters","Financed",1521
-"EX2-04","A13663",2022,"Komatsu PC210LC","Land Crafters","Financed",1243
-"EX2-05","1FD8W3FT3GEA60951",0,"CASE  210D Excavator","-","-",0
-"EX2-06","DAC210K7NKS7H1851",2021,"Case 210D Excavator","Sidenbury Holdings","Financed",3142
-"EX2-07","1FF210GXNF530332",2022,"John Deere 210 Excavator","Land Crafters","Financed",1117
-"EX2-09","DAC250K7 NMS7M1485",2022,"Case CX250D Excavator","Sidenbury Holdings","Financed",1218
-"EX2-10","451073",0,"Komatsu PC210-LC","Sidenbury Holdings","-",0
-"EX3-01","DAC300K7NMS7N1344",2022,"Case CX 300","Sidenbury Holdings","Financed",1262
-"EX3-02","1FFDDR70PJF940566",2018,"Hitachi 350 Excavator","Sidenbury Holdings","Financed",4981
-"EX3-03","HCMDDN60A00060347",2022,"Hitachi 300 LC Excavator","Sidenbury Holdings","Financed",1102
-"EX3-05","DAC210K7WL57H2412",2021,"Case 210D Excavator","Nest Homes","InterCo Rental",2325
-"EX3-06","DAC210K7NKS7H1970",2021,"Case 210 Excavator","Sidenbury Holdings","Financed",3198
-"EX3-07","HCMDDN60L00060348",2022,"Hitachi 300LC Excavator","Sidenbury Holdings","Financed",1081
-"EX3-08","CAT0349FC HPD20952",2019,"CAT 349F Excavator","Nest Homes","InterCo Rental",4103
-"EX3-10","RYG20729",0,"Caterpillar Excavator 3","Nest Homes","Financed",0
-"EXM-01","1FF035GXPHK280165",2021,"John Deere 35G Mini Excavator","Nest Homes","InterCo Rental",0
-"EXM-02","123504327",2014,"Takeuchi TB235 Mini Excavator","Nest Homes","InterCo Rental",0
-"EXM-03","123600474",2019,"Takeuchi TB235 Mini Excavator","Nest Homes","InterCo Rental",0
-"EXM-04","CAT00308EGG805631",2022,"CAT 308 Mini Excavator","Nest Homes","InterCo Rental",0
-"EXM-05","YMAVI035C6YY35219",2005,"Yanmar Mini Excavtor","-","-",0
-"EXM-06","HHKHMC15PE0001976",2022,"Case Mini Excavator CX60","Sidenbury Holdings","Financed",0
-"EXM-09","1FF035GXCHK280163",2017,"John Deere 35G Mini Excavator","Nest Homes","InterCo Rental",0
-"EXM-11","B4GM11445",2022,"Bobcat E42 Mini Excavator","Nest Homes","Financed",0
-"GEN-01","83169",0,"Powerhorse Generator","Nest Homes","-",0
-"GEN-02","10215968",0,"Powerhorse Generator","Nest Homes","-",0
-"GEN-03","-5",0,"Powerhorse Generator","Nest Homes","-",0
-"GPS-01","6149R31707/6148F00342",0,"Trimble Base & Rover Excavator","Nest Homes","Financed",0
-"GPS-02","2302J045YU",0,"Earthworks Trimble Dual GPS","Nest Homes","-",0
-"GPS-03","6150R31648",0,"Trimble SPS855 GPS Base Station","Nest Homes","Capital Lease",0
-"GPS-11","6150R32091",0,"Trimble SPS855 GPS Base Station - Stolen","Nest Homes","Capital Lease",0
-"GPS-12","6233R05591",0,"Trimble R750 GPS Base Station","Nest Homes","-",0
-"GPS-13","6149R31707",0,"Trimble SPS855 GPS Base Station","Nest Homes","-",0
-"GPS-14","6148F00342",0,"BASE STATION-GPS","Nest Homes","-",0
-"GPS-15","2271J961XT",0,"Earthworks Timble Dual GPS","Nest Homes","Financed",0
-"GPS-18","6150R32085",0,"Trimble SPS855 GPS Base Station","Nest Homes","Capital Lease",0
-"GPS-19","6150R31596",0,"Trimble SPS855 GPS Base Station","Nest Homes","Capital Lease",0
-"GPS-20","6327R05621",0,"Trimble R750 GPS Base Station","Nest Homes","-",0
-"GRE-01","E98AD213003676",0,"Milwaukee Grease Gun D8877 LT8-300LTU","Nest Homes","-",0
-"GRE-02","EG8AD212701801",0,"Miwaukee Grease Gun M18v01 TC5.0","Nest Homes","-",0
-"GRE-03","E98AD204708110",0,"Miwaukee Grease Gun M18 XC 5.0","Nest Homes","-",0
-"GRE-04","E98AF2149-13592",0,"Miwaukee Grease Gun","Nest Homes","-",0
-"GRE-05","E98AD212701348",0,"CAT Grease Gun 2646-20","Nest Homes","-",0
-"HAM-01","3611B3A013",0,"Bosch Hammer Drill RH32","Nest Homes","-",0
-"HG-01","40D-128-2185",0,"Peterson 5710D","Nest Homes","-",0
-"HT3-02","-6",2018,"John Deere 260E Off Road Truck","Nest Homes","Financed",0
-"HT4-01","B93A645EC03007861",2022,"Bell B45E Haul Truck","Nest Homes","Lease",1372
-"HT4-02","B93A645EV03007872",2022,"Bell B45E Haul Truck","Nest Homes","Lease",1472
-"HT4-03","B93A645WL03007872",2022,"Bell B45E Haul Truck","Nest Homes","Lease",0
-"HT4-04","B93A645EL03007709",2022,"Bell B45E Haul Truck","Nest Homes","Lease",0
-"HT4-05","B93A645EP03007801",2022,"Bell B45E Haul Truck","Nest Homes","Lease",0
-"HT4-06","B93A645EC03007912",2022,"Bell B45E Haul Truck","Nest Homes","Lease",0
-"HT4-07","B39A645EC03007911",2022,"Bell B45E Haul Truck","Nest Homes","Lease",0
-"HT4-08","B93A645EE03007891",2022,"Bell B45E Haul Truck","Nest Homes","Lease",0
-"HT4-09","B93A645EL03307959",2022,"Bell B45E Haul Truck","Nest Homes","Lease",0
-"HT4-10","B93A645EV03007867",2022,"Bell B45E Haul Truck","Nest Homes","Lease",0
-"JDT-01","1PY5055EEJJ402881",0,"John Deere Tractor","Nest Homes","InterCo Rental",0
-"JDT-02","LV5093E260160",0,"John Deere Tractor 5093","Nest Homes","InterCo Rental",0
-"JJ-01","B-3695",0,"Multiquip Mikasa MTX-60HD J","Nest Homes","-",0
-"JJ-02","-13",0,"Bomag BT50 Jumping Jack","Nest Homes","-",0
-"JJ-03","-14",0,"Bomag BT50 Jumping Jack","Nest Homes","-",0
-"JJ-04","G20D5450121N1A",0,"Bomag BT50 Jumping Jack","Nest Homes","-",0
-"JJ-05","G13427",0,"Jumping Jack MTX-60HD","Nest Homes","-",0
-"JJ-06","Z 9367",0,"Jumping Jack","Nest Homes","-",0
-"LASER-01","10002 201951175",0,"GEO MAX ZETA 1253 Laser","Nest Homes","-",0
-"LASER-02","14212411436",0,"GEO MAX AG ZAL124","Nest Homes","-",0
-"LASER-03","840357",0,"GEO MAX LASER ZAC 124","Nest Homes","-",0
-"LASER-04","39018",0,"David White D8877 LT8-30","Nest Homes","-",0
-"LEVE-01","42002",0,"Transit Level 300LTU","Nest Homes","-",0
-"MG-02","1DW672GXLEF662457",2014,"Motorgrader - JD 672E","Nest Homes","Capital Lease",4972
-"MOW-02","-15",0,"52"" Stand on Mower","Nest Homes","-",0
-"MOW-03","-16",0,"52"" Stand on Mower","Nest Homes","-",0
-"MOW-04","2109C88217611",0,"52"" Stand on Mower","Nest Homes","-",0
-"MOW-05","4002095870",0,"36' Walk Behind Mower","Nest Homes","-",0
-"MOW-06","031519F001446",0,"Husqvarna Zero Turn Mower","Nest Homes","-",0
-"MOW-1","-17",0,"52"" Stand on Mower","Nest Homes","-",0
-"MSST-01","B38T11567",0,"Bobcat MT55 Mini Track Loader","Nest Homes","-",0
-"MSST-02","B52P18699",0,"Bobcat MT100 Mini Track Loader","Nest Homes","-",0
-"MW-01","4000629818",0,"Ferris Lawn Mower","Nest Homes","-",0
-"PC1-01","57D01-22-0243179",0,"Power Curber 5700-D","Nest Homes","Financed",0
-"PC1-06","TEW22-031",0,"Trimble Power Curber UTS System","Nest Homes","Capital Lease",0
-"PMP-01","24320772",0,"Wacker Neuson Trash Pump - 4""","Nest Homes","InterCo Rental",0
-"PMP-02","747166",0,"Multi Quip 2"" Sump Pump","-","-",0
-"PV1-01","-7",0,"Lee Boy 8510 Paver","-","-",0
-"PV1-02","350770",0,"Lee Boy Paver 8616D","Land Crafters","Financed",0
-"RAIR-02","438688UDWD95",0,"R-Doosan Air Compressor","-","-",0
-"RD1-01","H1990498",2020,"DOUBLE DRUM ROLLER-HAM","-","Financed",135
-"RP1-01","CAT0815FTBYN01113",2015,"CAT 815 Padfoot Roller","Land Crafters","Financed",5956
-"RP1-02","DDDS212DNHWTB3016",0,"Case SV 212D Padfoot Roller","-","-",0
-"RP1-03","DDDS211ENM3020125",2022,"Case SV211E Padfoot Roller","Sidenbury Holdings","Financed",456
-"RP2-01","DDD52DNHWTB3016",0,"Case SV212 Padfoot Roller","Sidenbury Holdings","-",0
-"RP2-05","DVDS211ENM3020362",2022,"Case CV 211E Padfoot Roller","Sidenbury Holdings","Financed",0
-"RP2-06","DDDS208DNKWTA2248",2017,"Case SV 208D Padfoot Roller","Sidenbury Holdings","-",915
-"RP3-10","DDDS207ENLNTK3079",0,"Case SV207E Padfoot Roller","Sidenbury Holdings","Financed",0
-"RRT-09","-18",0,"Bomag 8500 Trench Roller","Sidenbury Holdings","-",0
-"RS2-03","WGH0H222VHAA02406",0,"HAMM H7I SMOTH DRUM RO","Sidenbury Holdings","Financed",0
-"RS3-01","3SV56-101-45",0,"Sakai SV544D Smooth Drum Roller","Sidenbury Holdings","-",0
-"RS3-10","DDDS211ENM3009783",0,"Case SV211E Padfoot Roller","Sidenbury Holdings","Financed",0
-"RT-01","-19",0,"Bomag BMP 8500 Trench Roller","Sidenbury Holdings","-",0
-"RT-02","746358",0,"Bomag 8500 Trench Roller","Sidenbury Holdings","-",0
-"RT-03","-20",0,"Bomag BMP 8500 Trench Roller","Sidenbury Holdings","-",0
-"RT-04","-21",0,"Bomag 8500 Trench Roller","Sidenbury Holdings","-",0
-"RT-05","-22",0,"Bomag BT50","Sidenbury Holdings","-",0
-"RT-06","-23",0,"Bomag BT50 Trench Roller","Sidenbury Holdings","-",0
-"RT-08","-24",0,"Bomag BT50 Trench Roller","Sidenbury Holdings","-",0
-"RT-09","-25",2016,"Bomag BMP 8500 Trench Roller","Sidenbury Holdings","-",0
-"RT-10","-8",0,"Bomag 8500 Trench Roller","Sidenbury Holdings","-",0
-"RT1-01","135736",0,"Bomag Trench Roller","Sidenbury Holdings","-",0
-"RT1-02","-9",0,"Bomag Trench Roller","Sidenbury Holdings","Financed",0
-"SAW-01","42680112821",0,"Stihl Saw TS420","Sidenbury Holdings","-",0
-"SAW-02","-10",0,"Stihl Pipesaw TS420","Sidenbury Holdings","-",0
-"SAW-03","192341902",0,"Brick Saw TS420","Sidenbury Holdings","-",0
-"SAW-05","42380112821",0,"Stihl Saw TS420","Sidenbury Holdings","-",0
-"SST-01","1T0333GMPKF356055",0,"John Deere 333G Skidsteer","Sidenbury Holdings","Financed",0
-"SST-02","JAFTV450VNM411979",0,"Case 450 Skidsteer","Sidenbury Holdings","Financed",0
-"SST-03","AN8L13457",0,"Bobcat T870 Skidsteer","Sidenbury Holdings","-",0
-"SST-04","JAFTR340HLM485078",0,"Case TR340B","Sidenbury Holdings","Financed",0
-"SST-05","A7MP63637",0,"Bobcat T320 Skidsteer","-","-",0
-"SST-06","10101",0,"Kubota SVL90-2","Nest Homes","InterCo Rental",0
-"SST-07","JAFTV450ANM411983",0,"Case 450 Skidsteer","Sidenbury Holdings","Financed",0
-"SST-08","CAT0289DLJX910326",0,"CAT 289 Skidsteer","Nest Homes","InterCo Rental",0
-"SST-09","CAT0259D3 CW919604",0,"CAT 259 Skidsteer","Sidenbury Holdings","Financed",0
-"SST-10","CW919589",0,"CAT 259D3 Skidsteer","Sidenbury Holdings","Financed",0
-"SST-11","CAT0259DPCW916660",0,"CAT 259 Skidsteer","Land Crafters","Financed",0
-"SST-12","JX909611",0,"CAT 289D Skidsteer","Nest Homes","InterCo Rental",0
-"SST-13","B4CE16564",0,"Bobcat T76 Skidsteer","-","-",0
-"SST-14","JAFTV450ANM411661",0,"Case 450 Skidsteer","Sidenbury Holdings","Financed",0
-"SST-15","CAT0289DJ JX907727",0,"CAT 289 D3 Skidsteer","Land Crafters","Financed",0
-"SST-22","JAFTV450VNM409670",0,"Case TV450B Skidsteer","Sidenbury Holdings","Financed",0
-"SST-23","KBCZ021CVL1L15226",2021,"Kubota Loader Skidsteer","Nest Homes","InterCo Rental",0
-"T3-01","-11",0,"John Deere 4105","-","-",0
-"WC-02","-12",0,"Morbark Woood Chipper  ","Land Crafters","Financed",0
-"WC-1","IVR2130P861000111",0,"Vermeer BC1400 TX Wood","-","-",0
-"WL2-01","A29682",2022,"Komatsu 270 Wheel Loader","-","Financed",922
-"WL2-02","A29684",2022,"Komatsu 270 Wheel Loader","-","Financed",1143
-"WL2-03","KMTWA135TMNA39974",2022,"Komatsu 320 Wheel Loader","Land Crafters","Financed",1008
-"WL2-04","KMTWA136AMA085178",2021,"Komatsu 270 Wheel Loader","Land Crafters","Financed",980
-"WL3-03","FNH321FHWMHP03582",2022,"Case 321F Wheel Loader","Sidenbury Holdings","Financed",355
-"DRILL-04","J77AFU2810848",,"Milwaukee Drill M18U01","-","-",0
+"equipment_id","serial_number","year","description","ownership","hours","contract_id","notes","status"
+"ACC-01","21-6400",0,"Fae Mulcher","Financed",0,57,"","Active"
+"ACC-02","-1",0,"Bush Hog Attachment","-",0,,,"Active"
+"ACC-03","-2",0,"Mulching Head Accessory","-",0,,,"Active"
+"ACC-05","-3",0,"Tiller for Skidsteer","-",0,,,"Active"
+"AIR-01","LV22234NC192219",0,"Ridgid - Air Compressor","-",0,,,"Active"
+"ATT-01","305764",0,"Spartan Sod Roller","-",0,,,"Active"
+"ATT-02","KC50767",0,"Stump Bucket","-",0,,,"Active"
+"BR1-01","PE4045D338795",0,"Rosco Street Sweeper","-",0,,,"Active"
+"CS-01","42380012821",0,"Stihl TS 420-Z 14'","-",0,,,"Active"
+"CS-02","192465597",0,"Stihl TS 420-Z 14'","-",0,,,"Active"
+"DRILL-01","544",0,"Impact Drill Kobalt KID 3","-",0,,,"Active"
+"DRILL-02","-4",0,"Driver Drill Kobalt KDD","-",0,,,"Active"
+"DRILL-03","3611B68512",0,"Electric Drill Bosh GBH2-28L","-",0,,,"Active"
+"DRILL-04","J77AFU2810848",,"Milwaukee Drill M18U01","-",0,,,"Active"
+"DZ1-01","CAT00D6NL5G6007430",2018,"CAT D6N Dozer","InterCo Rental",4322,,,"Active"
+"DZ1-02","JJGN850MEGC103110",2016,"CASE 850M Dozer","InterCo Rental",3200,,,"Active"
+"DZ1-03","B65327",2022,"Komatsu D61 PX  Dozer","Financed",1979,65,,"Active"
+"DZ1-04","CAT00D6KK EL700123",2016,"CAT  D6K2 LGP Dozer","Financed",4640,,,"Active"
+"DZ1-05","B65371",2022,"Komatsu D61 PX  Dozer","Financed",1746,65,,"Active"
+"DZ1-06","B45413",2022,"Komatsu D61 PX Dozer","Financed",2475,62,,"Active"
+"DZ2-01","CAT00D6KEFBH00787",2008,"CAT D6K XL Dozer","InterCo Rental",9474,,,"Active"
+"DZ2-02","CAT00D6KC EL700120",2016,"CAT  D6K Dozer","Financed",5911,,,"Active"
+"DZ2-03","WMR00660",2014,"CAT  D6K2XL","InterCo Rental",8640,,,"Active"
+"DZ2-04","CAT000D3TXKY03018",2022,"CAT D3 Dozer LGP","InterCo Rental",464,,,"Active"
+"DZ2-05","CAT000D3PXKY03019",2022,"CAT D3 Dozer LGP","InterCo Rental",525,,,"Active"
+"DZ2-06","B65710",2022,"Komatsu D61 PX Dozer","Financed",1400,68,,"Active"
+"DZ2-10","B65702",2022,"Komatsu D61 Dozer","Financed",1065,69,,"Active"
+"DZ3-01","CAT000D3D XKY02744",2022,"CAT D3 LGP Dozer","InterCo",950,8,,"Active"
+"DZ3-02","KMT0D122K01090512",2014,"Komatsu D39PX Dozer","InterCo Rental",7163,,,"Active"
+"DZ3-03","CAT000D5VRG901206",2022,"CAT D5 Dozer LGP 3D","InterCo",1920,,,"Active"
+"DZ3-04","CAT000D5CRG901214",2022,"CAT D5 Dozer LGP","InterCo Rental",1705,,,"Active"
+"DZ3-06","080Z00713",1987,"CAT D7 Dozer","-",6396,,,"Active"
+"EX1-01","CAT0349FC BZ220089",2018,"CAT 349F Excavator","InterCo Rental",4616,,,"Active"
+"EX1-02","CAT0330FH HCK20285",2019,"CAT 330F L Excavator","-",4143,,,"Active"
+"EX1-03","K1J15752",2008,"Link Belt 130 Excavator","InterCo Rental",7141,,,"Active"
+"EX1-11","50037",2016,"Komatsu PC138","-",3137,,,"Active"
+"EX2-01","DAC210K7NMS7H2562",2021,"Case 210D Excavator","Financed",1595,,,"Active"
+"EX2-02","DAC210K7NLS7H2407",2021,"Case 210D Excavator","Financed",2262,,,"Active"
+"EX2-03","DAC210K7NMS7H2531",2021,"Case 210 Excavator","Financed",1521,,,"Active"
+"EX2-04","A13663",2022,"Komatsu PC210LC","Financed",1243,66,,"Active"
+"EX2-05","1FD8W3FT3GEA60951",0,"CASE  210D Excavator","-",0,,,"Active"
+"EX2-06","DAC210K7NKS7H1851",2021,"Case 210D Excavator","Financed",3142,,,"Active"
+"EX2-07","1FF210GXNF530332",2022,"John Deere 210 Excavator","Financed",1117,,,"Active"
+"EX2-09","DAC250K7 NMS7M1485",2022,"Case CX250D Excavator","Financed",1218,,,"Active"
+"EX2-10","451073",0,"Komatsu PC210-LC","-",0,,,"Active"
+"EX3-01","DAC300K7NMS7N1344",2022,"Case CX 300","Financed",1262,,,"Active"
+"EX3-02","1FFDDR70PJF940566",2018,"Hitachi 350 Excavator","Financed",4981,,,"Active"
+"EX3-03","HCMDDN60A00060347",2022,"Hitachi 300 LC Excavator","Financed",1102,70,,"Active"
+"EX3-05","DAC210K7WL57H2412",2021,"Case 210D Excavator","InterCo Rental",2325,,,"Active"
+"EX3-06","DAC210K7NKS7H1970",2021,"Case 210 Excavator","Financed",3198,,,"Active"
+"EX3-07","HCMDDN60L00060348",2022,"Hitachi 300LC Excavator","Financed",1081,71,,"Active"
+"EX3-08","CAT0349FC HPD20952",2019,"CAT 349F Excavator","InterCo Rental",4103,,,"Active"
+"EX3-10","RYG20729",0,"Caterpillar Excavator 3","Financed",0,,,"Active"
+"EXM-01","1FF035GXPHK280165",2021,"John Deere 35G Mini Excavator","InterCo Rental",0,,,"Active"
+"EXM-02","123504327",2014,"Takeuchi TB235 Mini Excavator","InterCo Rental",0,,,"Active"
+"EXM-03","123600474",2019,"Takeuchi TB235 Mini Excavator","InterCo Rental",0,,,"Active"
+"EXM-04","CAT00308EGG805631",2022,"CAT 308 Mini Excavator","InterCo Rental",0,,,"Active"
+"EXM-05","YMAVI035C6YY35219",2005,"Yanmar Mini Excavtor","-",0,,,"Active"
+"EXM-06","HHKHMC15PE0001976",2022,"Case Mini Excavator CX60","Financed",0,,,"Active"
+"EXM-11","B4GM11445",2022,"Bobcat E42 Mini Excavator","Financed",0,,,"Active"
+"GEN-01","83169",0,"Powerhorse Generator","-",0,,,"Active"
+"GEN-02","10215968",0,"Powerhorse Generator","-",0,,,"Active"
+"GEN-03","-5",0,"Powerhorse Generator","-",0,,,"Active"
+"GPS-01","6149R31707/6148F00342",0,"Trimble Base & Rover Excavator","Financed",0,,,"Active"
+"GPS-02","2302J045YU",0,"Earthworks Trimble Dual GPS","-",0,,,"Active"
+"GPS-03","6150R31648",0,"Trimble SPS855 GPS Base Station","Capital Lease",0,,,"Active"
+"GPS-11","6150R32091",0,"Trimble SPS855 GPS Base Station - Stolen","Capital Lease",0,,,"Active"
+"GPS-12","6233R05591",0,"Trimble R750 GPS Base Station","-",0,,,"Active"
+"GPS-13","6149R31707",0,"Trimble SPS855 GPS Base Station","-",0,,,"Active"
+"GPS-14","6148F00342",0,"BASE STATION-GPS","-",0,,,"Active"
+"GPS-15","2271J961XT",0,"Earthworks Timble Dual GPS","Financed",0,,,"Active"
+"GPS-18","6150R32085",0,"Trimble SPS855 GPS Base Station","Capital Lease",0,,,"Active"
+"GPS-19","6150R31596",0,"Trimble SPS855 GPS Base Station","Capital Lease",0,,,"Active"
+"GPS-20","6327R05621",0,"Trimble R750 GPS Base Station","-",0,,,"Active"
+"GRE-01","E98AD213003676",0,"Milwaukee Grease Gun D8877 LT8-300LTU","-",0,,,"Active"
+"GRE-02","EG8AD212701801",0,"Miwaukee Grease Gun M18v01 TC5.0","-",0,,,"Active"
+"GRE-03","E98AD204708110",0,"Miwaukee Grease Gun M18 XC 5.0","-",0,,,"Active"
+"GRE-04","E98AF2149-13592",0,"Miwaukee Grease Gun","-",0,,,"Active"
+"GRE-05","E98AD212701348",0,"CAT Grease Gun 2646-20","-",0,,,"Active"
+"HAM-01","3611B3A013",0,"Bosch Hammer Drill RH32","-",0,,,"Active"
+"HG-01","40D-128-2185",0,"Peterson 5710D","-",0,,,"Active"
+"HT3-02","-6",2018,"John Deere 260E Off Road Truck","Financed",0,,,"Active"
+"HT4-01","B93A645EC03007861",2022,"Bell B45E Haul Truck","Lease",1372,,,"Active"
+"HT4-02","B93A645EV03007872",2022,"Bell B45E Haul Truck","Lease",1472,,,"Active"
+"HT4-03","B93A645WL03007872",2022,"Bell B45E Haul Truck","Lease",0,,,"Active"
+"HT4-04","B93A645EL03007709",2022,"Bell B45E Haul Truck","Lease",0,,,"Active"
+"HT4-05","B93A645EP03007801",2022,"Bell B45E Haul Truck","Lease",0,,,"Active"
+"HT4-06","B93A645EC03007912",2022,"Bell B45E Haul Truck","Lease",0,,,"Active"
+"HT4-07","B39A645EC03007911",2022,"Bell B45E Haul Truck","Lease",0,,,"Active"
+"HT4-08","B93A645EE03007891",2022,"Bell B45E Haul Truck","Lease",0,,,"Active"
+"HT4-09","B93A645EL03307959",2022,"Bell B45E Haul Truck","Lease",0,,,"Active"
+"HT4-10","B93A645EV03007867",2022,"Bell B45E Haul Truck","Lease",0,,,"Active"
+"JDT-01","1PY5055EEJJ402881",0,"John Deere Tractor","InterCo Rental",0,,,"Active"
+"JDT-02","LV5093E260160",0,"John Deere Tractor 5093","InterCo Rental",0,,,"Active"
+"JJ-01","B-3695",0,"Multiquip Mikasa MTX-60HD J","-",0,,,"Active"
+"JJ-02","-13",0,"Bomag BT50 Jumping Jack","-",0,,,"Active"
+"JJ-03","-14",0,"Bomag BT50 Jumping Jack","-",0,,,"Active"
+"JJ-04","G20D5450121N1A",0,"Bomag BT50 Jumping Jack","-",0,,,"Active"
+"JJ-05","G13427",0,"Jumping Jack MTX-60HD","-",0,,,"Active"
+"JJ-06","Z 9367",0,"Jumping Jack","-",0,,,"Active"
+"LASER-01","10002 201951175",0,"GEO MAX ZETA 1253 Laser","-",0,,,"Active"
+"LASER-02","14212411436",0,"GEO MAX AG ZAL124","-",0,,,"Active"
+"LASER-03","840357",0,"GEO MAX LASER ZAC 124","-",0,,,"Active"
+"LASER-04","39018",0,"David White D8877 LT8-30","-",0,,,"Active"
+"LEVE-01","42002",0,"Transit Level 300LTU","-",0,,,"Active"
+"MG-02","1DW672GXLEF662457",2014,"Motorgrader - JD 672E","Capital Lease",4972,,,"Active"
+"MOW-02","-15",0,"52"" Stand on Mower","-",0,,,"Active"
+"MOW-03","-16",0,"52"" Stand on Mower","-",0,,,"Active"
+"MOW-04","2109C88217611",0,"52"" Stand on Mower","-",0,,,"Active"
+"MOW-05","4002095870",0,"36' Walk Behind Mower","-",0,,,"Active"
+"MOW-06","031519F001446",0,"Husqvarna Zero Turn Mower","-",0,,,"Active"
+"MOW-1","-17",0,"52"" Stand on Mower","-",0,,,"Active"
+"MSST-01","B38T11567",0,"Bobcat MT55 Mini Track Loader","-",0,,,"Active"
+"MSST-02","B52P18699",0,"Bobcat MT100 Mini Track Loader","-",0,,,"Active"
+"MW-01","4000629818",0,"Ferris Lawn Mower","-",0,,,"Active"
+"PC1-01","57D01-22-0243179",0,"Power Curber 5700-D","Financed",0,,,"Active"
+"PC1-06","TEW22-031",0,"Trimble Power Curber UTS System","Capital Lease",0,,,"Active"
+"PMP-01","24320772",0,"Wacker Neuson Trash Pump - 4""","InterCo Rental",0,,,"Active"
+"PMP-02","747166",0,"Multi Quip 2"" Sump Pump","-",0,,,"Active"
+"PV1-01","-7",0,"Lee Boy 8510 Paver","-",0,,,"Active"
+"PV1-02","350770",0,"Lee Boy Paver 8616D","Financed",0,,,"Active"
+"RAIR-02","438688UDWD95",0,"R-Doosan Air Compressor","-",0,,,"Active"
+"RD1-01","H1990498",2020,"DOUBLE DRUM ROLLER-HAM","Financed",135,,,"Active"
+"RP1-01","CAT0815FTBYN01113",2015,"CAT 815 Padfoot Roller","Financed",5956,,,"Active"
+"RP1-02","DDDS212DNHWTB3016",0,"Case SV 212D Padfoot Roller","-",0,,,"Active"
+"RP1-03","DDDS211ENM3020125",2022,"Case SV211E Padfoot Roller","Financed",456,,,"Active"
+"RP2-01","DDD52DNHWTB3016",0,"Case SV212 Padfoot Roller","-",0,,,"Active"
+"RP2-05","DVDS211ENM3020362",2022,"Case CV 211E Padfoot Roller","Financed",0,,,"Active"
+"RP2-06","DDDS208DNKWTA2248",2017,"Case SV 208D Padfoot Roller","-",915,,,"Active"
+"RP3-10","DDDS207ENLNTK3079",0,"Case SV207E Padfoot Roller","Financed",0,,,"Active"
+"RRT-09","-18",0,"Bomag 8500 Trench Roller","-",0,,,"Active"
+"RS2-03","WGH0H222VHAA02406",0,"HAMM H7I SMOTH DRUM RO","Financed",0,,,"Active"
+"RS3-01","3SV56-101-45",0,"Sakai SV544D Smooth Drum Roller","-",0,,,"Active"
+"RS3-10","DDDS211ENM3009783",0,"Case SV211E Padfoot Roller","Financed",0,,,"Active"
+"RT-01","-19",0,"Bomag BMP 8500 Trench Roller","-",0,,,"Active"
+"RT-02","746358",0,"Bomag 8500 Trench Roller","-",0,,,"Active"
+"RT-03","-20",0,"Bomag BMP 8500 Trench Roller","-",0,,,"Active"
+"RT-04","-21",0,"Bomag 8500 Trench Roller","-",0,,,"Active"
+"RT-05","-22",0,"Bomag BT50","-",0,,,"Active"
+"RT-06","-23",0,"Bomag BT50 Trench Roller","-",0,,,"Active"
+"RT-08","-24",0,"Bomag BT50 Trench Roller","-",0,,,"Active"
+"RT-09","-25",2016,"Bomag BMP 8500 Trench Roller","-",0,,,"Active"
+"RT-10","-8",0,"Bomag 8500 Trench Roller","-",0,,,"Active"
+"RT1-01","135736",0,"Bomag Trench Roller","-",0,,,"Active"
+"RT1-02","-9",0,"Bomag Trench Roller","Financed",0,,,"Active"
+"SAW-01","42680112821",0,"Stihl Saw TS420","-",0,,,"Active"
+"SAW-02","-10",0,"Stihl Pipesaw TS420","-",0,,,"Active"
+"SAW-03","192341902",0,"Brick Saw TS420","-",0,,,"Active"
+"SAW-05","42380112821",0,"Stihl Saw TS420","-",0,,,"Active"
+"SST-01","1T0333GMPKF356055",0,"John Deere 333G Skidsteer","Financed",0,,,"Active"
+"SST-02","JAFTV450VNM411979",0,"Case 450 Skidsteer","Financed",0,,,"Active"
+"SST-03","AN8L13457",0,"Bobcat T870 Skidsteer","-",0,,,"Active"
+"SST-04","JAFTR340HLM485078",0,"Case TR340B","Financed",0,,,"Active"
+"SST-05","A7MP63637",0,"Bobcat T320 Skidsteer","-",0,,,"Active"
+"SST-06","10101",0,"Kubota SVL90-2","InterCo Rental",0,,,"Active"
+"SST-07","JAFTV450ANM411983",0,"Case 450 Skidsteer","Financed",0,,,"Active"
+"SST-08","CAT0289DLJX910326",0,"CAT 289 Skidsteer","InterCo Rental",0,,,"Active"
+"SST-09","CAT0259D3 CW919604",0,"CAT 259 Skidsteer","Financed",0,7,,"Active"
+"SST-10","CW919589",0,"CAT 259D3 Skidsteer","Financed",0,7,,"Active"
+"SST-11","CAT0259DPCW916660",0,"CAT 259 Skidsteer","Financed",0,,,"Active"
+"SST-12","JX909611",0,"CAT 289D Skidsteer","InterCo Rental",0,,,"Active"
+"SST-13","B4CE16564",0,"Bobcat T76 Skidsteer","Leased",0,,,"Active"
+"SST-14","JAFTV450ANM411661",0,"Case 450 Skidsteer","Financed",0,,,"Active"
+"SST-15","CAT0289DJ JX907727",0,"CAT 289 D3 Skidsteer","Financed",0,,,"Active"
+"SST-22","JAFTV450VNM409670",0,"Case TV450B Skidsteer","Financed",0,,,"Active"
+"SST-23","KBCZ021CVL1L15226",2021,"Kubota Loader Skidsteer","InterCo Rental",0,,,"Active"
+"T3-01","-11",0,"John Deere 4105","-",0,,,"Active"
+"WC-02","-12",0,"Morbark Woood Chipper  ","Financed",0,,,"Active"
+"WC-1","IVR2130P861000111",0,"Vermeer BC1400 TX Wood","-",0,,,"Active"
+"WL2-01","A29682",2022,"Komatsu 270 Wheel Loader","Financed",922,67,,"Active"
+"WL2-02","A29684",2022,"Komatsu 270 Wheel Loader","Financed",1143,67,,"Active"
+"WL2-03","KMTWA135TMNA39974",2022,"Komatsu 320 Wheel Loader","Financed",1008,63,,"Active"
+"WL2-04","KMTWA136AMA085178",2021,"Komatsu 270 Wheel Loader","Financed",980,64,,"Active"
+"WL3-03","FNH321FHWMHP03582",2022,"Case 321F Wheel Loader","Financed",355,,"","Active"
+"EXM-09","1FF035GXCHK280163",2017,"John Deere 35G Mini Excavator","Sold",0,36,,"Inactive"
