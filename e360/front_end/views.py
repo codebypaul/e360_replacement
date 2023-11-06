@@ -105,24 +105,3 @@ def vehicle_list(request):
 
     return JsonResponse(data)
 
-# Admin only
-def admin_panel(request,*args, **kwargs):
-    equipment_list = Equipment.objects.all()
-    vehicle_list = Vehicle.objects.all()
-
-    #  Pagination
-    equip_p = Paginator(Equipment.objects.all(), 10)
-    equip_page = request.GET.get('page')
-    equipments = equip_p.get_page(equip_page)
-
-    vehicle_p = Paginator(Vehicle.objects.all(), 10)
-    vehicle_page = request.GET.get('page')
-    vehicles = vehicle_p.get_page(vehicle_page)
-
-    context={
-        'equipment_list':equipment_list,
-        'equipments':equipments,
-        'vehicle_list':vehicle_list,
-        'vehicles':vehicles
-    }
-    return render(request,'admin/admin_panel.html',context=context,status=200)

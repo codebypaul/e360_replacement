@@ -12,8 +12,4 @@ urlpatterns = [
     path('system-home/', views.system, name='system home page'),
     path('equipment-list/',views.equipment_list, name = 'view all equipment'),
     path('vehicle-list/',views.vehicle_list, name = 'view all vehicles'),
-
-    # Admin Only Pages
-    path('admin-panel/',views.admin_panel,name='admin panel'),
-    
 ]

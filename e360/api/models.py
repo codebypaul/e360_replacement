@@ -20,9 +20,12 @@ class Loan(models.Model):
     remaining_payments = models.PositiveSmallIntegerField(blank=True,null=True)
     loan_status = models.CharField(max_length=20,choices= loan_statuses,blank=True, null=True)
     loan_satisfied_date = models.DateField(blank=True, null=True)
-    
+
     def __str__(self):
         return f'{self.lender} - {self.contract_number}'
+    
+    class Meta:
+        ordering=['lender','contract_number']
 
 class Equipment(models.Model):
     ownership_types = [
