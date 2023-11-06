@@ -11,8 +11,9 @@ from django.contrib.auth import login
 # models
 from api.models import Equipment, Vehicle
 
-# 
+# Pagination
 from django.core.paginator import Paginator
+
 # Create your views here.
 def home_page(request):
 
@@ -29,7 +30,26 @@ class CustomLoginView(LoginView):
 
 # Authenticated User View
 def system(request):
-    return render(request, 'pages/system.html', context = {}, status = 200)
+    equipment_list = Equipment.objects.all()
+    vehicle_list = Vehicle.objects.all()
+
+    #  Pagination
+    equip_p = Paginator(Equipment.objects.all(), 10)
+    equip_page = request.GET.get('page')
+    equipments = equip_p.get_page(equip_page)
+
+    vehicle_p = Paginator(Vehicle.objects.all(), 10)
+    vehicle_page = request.GET.get('page')
+    vehicles = vehicle_p.get_page(vehicle_page)
+
+    context={
+        'equipment_list':equipment_list,
+        'equipments':equipments,
+        'vehicle_list':vehicle_list,
+        'vehicles':vehicles
+    }
+
+    return render(request, 'pages/system.html', context = context, status = 200)
 
 def equipment_list(request):
     """
@@ -87,10 +107,22 @@ def vehicle_list(request):
 
 # Admin only
 def admin_panel(request,*args, **kwargs):
-    equipments = Equipment.objects.all()
-    vehicles = Vehicle.objects.all()
+    equipment_list = Equipment.objects.all()
+    vehicle_list = Vehicle.objects.all()
+
+    #  Pagination
+    equip_p = Paginator(Equipment.objects.all(), 10)
+    equip_page = request.GET.get('page')
+    equipments = equip_p.get_page(equip_page)
+
+    vehicle_p = Paginator(Vehicle.objects.all(), 10)
+    vehicle_page = request.GET.get('page')
+    vehicles = vehicle_p.get_page(vehicle_page)
+
     context={
+        'equipment_list':equipment_list,
         'equipments':equipments,
+        'vehicle_list':vehicle_list,
         'vehicles':vehicles
     }
     return render(request,'admin/admin_panel.html',context=context,status=200)
