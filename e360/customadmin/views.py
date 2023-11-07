@@ -6,6 +6,7 @@ from django.urls import reverse_lazy
 from django.contrib.auth.mixins import LoginRequiredMixin
 # models
 from api.models import Equipment, Vehicle, Loan
+from django.contrib.auth.models import User
 
 # Pagination
 from django.core.paginator import Paginator
@@ -13,19 +14,29 @@ from django.core.paginator import Paginator
 
 # Admin only
 def admin_panel(request,*args, **kwargs):
-    equipment_list = Equipment.objects.all()
-    vehicle_list = Vehicle.objects.all()
+    # Employees
+    employee_list=User.objects.all()    
 
-    #  Pagination
-    equip_p = Paginator(Equipment.objects.all(), 10)
+    employ_p = Paginator(User.objects.all(), 15)
+    employ_page = request.GET.get('emp_page')
+    employees = employ_p.get_page(employ_page)
+    #  Equipment
+    equipment_list = Equipment.objects.all()
+
+    equip_p = Paginator(Equipment.objects.all(), 15)
     equip_page = request.GET.get('e_page')
     equipments = equip_p.get_page(equip_page)
 
-    vehicle_p = Paginator(Vehicle.objects.all(), 10)
+    # Vehicles
+    vehicle_list = Vehicle.objects.all()
+
+    vehicle_p = Paginator(Vehicle.objects.all(), 15)
     vehicle_page = request.GET.get('v_page')
     vehicles = vehicle_p.get_page(vehicle_page)
 
     context={
+        'employee_list':employee_list,
+        'employees':employees,
         'equipment_list':equipment_list,
         'equipments':equipments,
         'vehicle_list':vehicle_list,
