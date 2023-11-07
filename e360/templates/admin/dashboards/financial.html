@@ -31,7 +31,15 @@ Dashboard : Financial
                                 <tbody>
                                     {% for loan in loans %}
                                     <tr>
-                                        <th scope="row">{{loan.lender}}</th>
+                                        <th scope="row">
+                                            {% if loan.loan_status == 'Active' %}
+                                            <span class="badge text-bg-success">{{loan.loan_status}}</span>
+                                            {% else %}
+                                            <span class="badge text-bg-danger">{{loan.loan_status}}</span>
+                                            {% endif %}
+
+                                            {{loan.lender}}
+                                        </th>
                                         <td>{{loan.contract_number}}</td>
                                         <td>{{loan.monthly_payment}}</td>
                                         <td>{{loan.financed_amount}}</td>
@@ -44,7 +52,11 @@ Dashboard : Financial
                                 </tbody>
                               </table>
                         </div>
-                        <div class="card-footer">
+                        <div class="card-footer d-flex justify-content-evenly">
+                            <div>
+                                <a class="btn btn-outline-secondary" href="{% url 'add new loan' %}" role="button">Add New Loan</a>
+                            </div>
+
                             <nav aria-label="Page navigation example">
                                 <ul class="pagination">
 
@@ -109,6 +121,7 @@ Dashboard : Financial
                             </table>
                         </div>
                         <div class="card-footer">
+                            
                             <nav aria-label="Page navigation example">
                                 <ul class="pagination">
 

@@ -1,5 +1,9 @@
 from django.shortcuts import render
-
+from django.views.generic.detail import DetailView
+from django.views.generic.edit import CreateView, UpdateView, DeleteView, FormView
+from django.urls import reverse_lazy
+# Authentication
+from django.contrib.auth.mixins import LoginRequiredMixin
 # models
 from api.models import Equipment, Vehicle, Loan
 
@@ -60,6 +64,15 @@ def financial(request):
         'vehicles':vehicles
     }
     return render(request, 'admin/dashboards/financial.html',context=context,status=200)
+
+class LoanCreate(LoginRequiredMixin,CreateView):
+    model = Loan
+    fields = ['lender','owned_company','contract_number','start_date','loan_term','interest_rate','down_payment','financed_amount','monthly_payment']
+    success_url = reverse_lazy('financial dash')
+    template_name = 'financial/loan_form.html'
+    def form_valid(self, form):
+        # form.instance.user = self.request.user
+        return super(LoanCreate, self).form_valid(form)
 
 # Equipment
 def equipment(request):

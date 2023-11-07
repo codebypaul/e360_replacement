@@ -18,7 +18,7 @@ class Loan(models.Model):
     financed_amount = models.FloatField(blank=True,null=True)
     monthly_payment = models.FloatField(blank=True,null=True)
     remaining_payments = models.PositiveSmallIntegerField(blank=True,null=True)
-    loan_status = models.CharField(max_length=20,choices= loan_statuses,blank=True, null=True)
+    loan_status = models.CharField(max_length=20,choices= loan_statuses,blank=True, null=True,default='Active')
     loan_satisfied_date = models.DateField(blank=True, null=True)
 
     def __str__(self):
