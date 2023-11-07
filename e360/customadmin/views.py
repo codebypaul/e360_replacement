@@ -74,32 +74,7 @@ class LoanCreate(LoginRequiredMixin,CreateView):
         # form.instance.user = self.request.user
         return super(LoanCreate, self).form_valid(form)
 
-# Equipment
-def equipment(request):
-    equipment_list=Equipment.objects.all()
 
-    equip_p = Paginator(Equipment.objects.all(), 10)
-    equip_page = request.GET.get('e_page')
-    equipments = equip_p.get_page(equip_page)
-    context={
-        'equipment_list':equipment_list,
-        'equipments':equipments
-    }
-    return render(request, 'admin/dashboards/equipment.html',context=context,status=200)
-
-# Vehicles
-def vehicle(request):
-    vehicle_list=Vehicle.objects.all()
-
-    vehicle_p = Paginator(Vehicle.objects.all(), 10)
-    vehicle_page = request.GET.get('v_page')
-    vehicles = vehicle_p.get_page(vehicle_page)
-
-    context={
-        'vehicle_list':vehicle_list,
-        'vehicles':vehicles
-    }
-    return render(request, 'admin/dashboards/vehicles.html',context=context,status=200)
 
 # Employees
 def employees(request):

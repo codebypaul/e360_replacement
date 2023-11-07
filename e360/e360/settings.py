@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'api.apps.ApiConfig',
     'front_end.apps.FrontEndConfig',
     'customadmin.apps.CustomadminConfig',
+    'asset.apps.AssetConfig',
 
     'rest_framework',
 ]
