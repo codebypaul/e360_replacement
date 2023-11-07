@@ -15,9 +15,9 @@ from django.core.paginator import Paginator
 # Admin only
 def admin_panel(request,*args, **kwargs):
     # Employees
-    employee_list=User.objects.all()    
+    employee_list=User.objects.all().order_by('last_name')   
 
-    employ_p = Paginator(User.objects.all(), 15)
+    employ_p = Paginator(User.objects.all().order_by('last_name'), 15)
     employ_page = request.GET.get('emp_page')
     employees = employ_p.get_page(employ_page)
     #  Equipment
