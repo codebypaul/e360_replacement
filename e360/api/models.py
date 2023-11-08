@@ -1,5 +1,6 @@
 from django.db import models
-
+from asset.models import Location
+from customadmin.models import Profile
 # Create your models here.
 class Loan(models.Model):
     loan_statuses = [
@@ -57,10 +58,11 @@ class Equipment(models.Model):
     ownership = models.CharField(max_length=20,choices=ownership_types)
     hours = models.IntegerField()
     contract = models.ForeignKey(Loan, blank=True, null=True, on_delete=models.CASCADE)
+    location = models.ForeignKey(Location,blank=True,null=True,on_delete=models.CASCADE)
     notes = models.TextField(blank=True, null=True)
 
     def __str__(self):
-        self.equipment_id
+        return self.equipment_id
     
     class Meta:
         ordering=['equipment_id']
@@ -95,10 +97,11 @@ class Vehicle(models.Model):
     ownership = models.CharField(max_length=20,choices=ownership_types)
     mileage = models.IntegerField()
     contract = models.ForeignKey(Loan,blank=True,null=True,on_delete=models.CASCADE)
+    driver=models.OneToOneField(Profile,on_delete=models.CASCADE,null=True,blank=True)
     notes = models.TextField(blank=True, null=True)
 
     def __str__(self):
-        self.equipment_id
+        return self.equipment_id
     
     class Meta:
         ordering=['equipment_id']
