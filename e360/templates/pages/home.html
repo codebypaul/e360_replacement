@@ -5,35 +5,28 @@ This is amazing
 {% endblock head_title %}
 
 {% block content %}
-<div class="row text-center">
-    <div class="col">
-        <h1>
-            Welcome to E360
-        </h1>
+<div class="container-fluid">
+    
+    <div class="row text-center">
+        <div class="col">
+            <h1>
+                Welcome to E360
+            </h1>
+        </div>
     </div>
-</div>
 
-
-<!-- <div class="row mb-3">
-    <div class="col-md-4 mx-auto col-10">
-        <form class="form" id='tweet-create-form'  method="POST" action="/create-tweet/">
-            {% csrf_token %}
-            <input type="hidden" value="/" name="next">
-            <textarea class="form-control" name="content" placeholder = "What's on your mind?"></textarea>
-            <button type='submit' class="btn btn-primary">Tweet</button>
-        </form>
+    <div class ='row'>
+        <div class="col">
+            <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-primary" id="equipBtn">Equipment</button>
+                <button type="button" class="btn btn-primary" id="vehicleBtn">Vehicles</button>
+            </div>
+            <div id="list">
+                Loading...
+            </div>
+        </div>
     </div>
-</div> -->
 
-
-<div class ='row'>
-    <div class="btn-group" role="group" aria-label="Basic example">
-        <button type="button" class="btn btn-primary" id="equipBtn">Equipment</button>
-        <button type="button" class="btn btn-primary" id="vehicleBtn">Vehicles</button>
-    </div>
-    <div id="list">
-        Loading...
-    </div>
 </div>
 
 <script>

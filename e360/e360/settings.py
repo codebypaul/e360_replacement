@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'front_end.apps.FrontEndConfig',
     'customadmin.apps.CustomadminConfig',
     'asset.apps.AssetConfig',
+    'finance.apps.FinanceConfig',
 
     'rest_framework',
 ]
