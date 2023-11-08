@@ -103,29 +103,6 @@ class Vehicle(models.Model):
     class Meta:
         ordering=['equipment_id']
 
-
-
-# class Liquidation(models.Model):
-#     equipment_id =  models.ForeignKey(Equipment,null=True,on_delete=models.CASCADE)  
-#     vehicle_id = models.ForeignKey(Vehicle,db_column='vehicle_id',null=True,on_delete=models.CASCADE) 
-#     contract_id = models.ForeignKey(Loan,null=True,on_delete=models.CASCADE)
-#     payoff_amount = models.IntegerField
-#     as_of_date = models.DateField
-#     fair_market_value = models.IntegerField
-#     overtime_liq_value = models.IntegerField
-#     price_sold = models.IntegerField
-#     date_sold = models.DateField
-
-class Location(models.Model):
-    location_name = models.TextField(blank=True,null=True)
-
-# class Employee(models.Model):
-#     employee_id = models.PositiveIntegerField(primary_key=True,unique=True)
-#     first_name = models.CharField(max_length=20)
-#     last_name = models.CharField(max_length=20)
-#     title = models.CharField(max_length=30)
-#     active = models.BooleanField(null=True)
-
 # class Note(models.Model):
 #     equipment = models.ForeignKey(Equipment,on_delete=models.CASCADE)
 #     vehicle = models.ForeignKey(Vehicle,on_delete=models.CASCADE)

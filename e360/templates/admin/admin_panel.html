@@ -21,7 +21,7 @@ Admin Panel
                   <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">
                         <ul class="list-group list-group-flush">
-                            <li class="list-group-item"><a href="{% url 'financial dash' %}">Financial</a></li>
+                            <li class="list-group-item"><a href="{% url 'finance dash' %}">Financial</a></li>
                             <li class="list-group-item"><a href="">Projects</a></li>
                             <li class="list-group-item"><a href="{% url 'equipment dash' %}">Equipment</a></li>
                             <li class="list-group-item"><a href="{% url 'vehicle dash' %}">Vehicles</a></li>
@@ -113,9 +113,12 @@ Admin Panel
             <div class="row mb-5">
                 <div class="col-6">
                     <div class="card mb-3">
-                        <div class="card-header text-center">
+                        <div class="card-header d-flex justify-content-between">
                             <h3>Equipment</h3> 
-
+                            <form class="d-flex" role="search">
+                                <input class="form-control me-2" type="search" placeholder="Search {{equipment_list.count}} equipment" aria-label="Search">
+                                <button class="btn btn-outline-success" type="submit">Search</button>
+                              </form>
                             
                             
                         </div>
@@ -179,8 +182,12 @@ Admin Panel
                 </div>
                 <div class="col-6">
                     <div class="card mb-3">
-                        <div class="card-header text-center">
+                        <div class="card-header d-flex justify-content-between">
                             <h3>Vehicles</h3>
+                            <form class="d-flex" role="search">
+                                <input class="form-control me-2" type="search" placeholder="Search {{vehicle_list.count}} vehicles" aria-label="Search">
+                                <button class="btn btn-outline-success" type="submit">Search</button>
+                              </form>
                         </div>
                         <div class="card-body">
                             <table class="table table-striped table-hover">
@@ -264,8 +271,12 @@ Admin Panel
                 <div class="col">
 
                     <div class="card">
-                        <div class="card-header">
+                        <div class="card-header d-flex justify-content-between">
                             <h3>Employees</h3>
+                            <form class="d-flex" role="search">
+                                <input class="form-control me-2" type="search" placeholder="Search {{employee_list.count}} employees" aria-label="Search">
+                                <button class="btn btn-outline-success" type="submit">Search</button>
+                              </form>
                         </div>
                         <div class="card-body">
                             <table class="table table-striped table-hover">

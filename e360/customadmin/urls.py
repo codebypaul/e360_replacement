@@ -7,7 +7,7 @@ urlpatterns = [
     # Admin
     path('dashboard/', views.admin_panel,name='admin panel'),
     # Financial
-    path('finance-dashboard/', views.financial,name='financial dash'),
+    path('finance-dashboard/', views.financial,name='finance dash'),
     path('new-loan/',LoanCreate.as_view(),name='add new loan'),
 
 ]

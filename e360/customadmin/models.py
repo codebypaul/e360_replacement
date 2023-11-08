@@ -12,7 +12,10 @@ class Profile(models.Model):
     employee_id=models.IntegerField(null=True,blank=True)
     phone_number=models.CharField(max_length=10,null=True,blank=True)
     birth_date=models.DateField(null=True,blank=True)
-    vehicle=models.ForeignKey(Vehicle,null=True,blank=True,on_delete=models.CASCADE)
+    # vehicle=models.OneToOneField(Vehicle,null=True,blank=True,on_delete=models.CASCADE)
+
+    def __str__(self):
+        return f'{self.user.first_name} {self.user.last_name}'
     
 @receiver(post_save,sender=User)
 def create_user_profile(sender,instance,created,**kwargs):
