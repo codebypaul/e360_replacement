@@ -11,8 +11,12 @@ Dashboard : Vehicles
         <div class="col-10">
             <h1>Vehicle Dashboard</h1>
             <div class="card">
-                <div class="card-header">
-
+                <div class="card-header d-flex justify-content-between">
+                    <h3>Vehicle List</h3>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search {{vehicle_list.count}} vehicles" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
                 </div>
 
                 <div class="card-body">
@@ -20,10 +24,11 @@ Dashboard : Vehicles
                     <table class="table">
                         <thead>
                             <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">First</th>
-                                <th scope="col">Last</th>
-                                <th scope="col">Handle</th>
+                                <th scope="col">Equipment ID</th>
+                                <th scope="col">Driver</th>
+                                <th scope="col">Year</th>
+                                <th scope="col">Description</th>
+                                <th scope="col">Mileage</th>
                             </tr>
                         </thead>
 
@@ -31,9 +36,15 @@ Dashboard : Vehicles
                             {% for vehicle in vehicles %}
                             <tr>
                                 <th scope="row">{{vehicle.equipment_id}}</th>
+                                <td>
+                                    <select name="" id="">
+                                        <option value="">{{vehicle.driver}}</option>
+                                    </select>
+                                    
+                                </td>
                                 <td>{{vehicle.year}}</td>
                                 <td>{{vehicle.description}}</td>
-                                <td>{{vehicle.driver}}</td>
+                                <td>{{vehicle.mileage }}</td>
                             </tr>
                             {% endfor %}
                         </tbody>
@@ -41,41 +52,49 @@ Dashboard : Vehicles
 
                 </div>
 
-                <div class="card-footer">
+                <div class="card-footer d-flex justify-content-between">
+                    <div>
+                        Future Filter Count
+                    </div>
 
-                    <nav aria-label="...">
-                        <ul class="pagination">
+                    <div>
 
-                            {% if vehicles.has_previous %}
-                            <li class="page-item">
-                                <a class="page-link" href="?v_page={{vehicles.previous_page_number}}">Previous</a>
-                            </li>
-                            {% else %}
-                            <li class="page-item disabled">
-                                <a class="page-link">Previous</a>
-                            </li>
-                            {% endif %}
-
-                            
-                            {% for i in vehicles.paginator.page_range %}
-                                {% if i == vehicles.number%}
-                                <li class="page-item active"><a class="page-link" href="?v_page={{i}}">{{i}}</a></li>
+                        <nav aria-label="...">
+                            <ul class="pagination">
+    
+                                {% if vehicles.has_previous %}
+                                <li class="page-item">
+                                    <a class="page-link" href="?v_page={{vehicles.previous_page_number}}">Previous</a>
+                                </li>
                                 {% else %}
-                                <li class="page-item"><a class="page-link" href="?v_page={{i}}">{{i}}</a></li>
+                                <li class="page-item disabled">
+                                    <a class="page-link">Previous</a>
+                                </li>
                                 {% endif %}
-                            {% endfor %}
+    
+                                
+                                {% for i in vehicles.paginator.page_range %}
+                                    {% if i == vehicles.number%}
+                                    <li class="page-item active"><a class="page-link" href="?v_page={{i}}">{{i}}</a></li>
+                                    {% else %}
+                                    <li class="page-item"><a class="page-link" href="?v_page={{i}}">{{i}}</a></li>
+                                    {% endif %}
+                                {% endfor %}
+    
+                                {% if vehicles.has_next %}
+                                <li class="page-item">
+                                    <a class="page-link" href="?v_page={{vehicles.next_page_number}}">Next</a>
+                                </li>
+                                {% else %}
+                                <li class="page-item">
+                                    <a class="page-link disabled" >Next</a>
+                                </li>
+                                {% endif %}
+                            </ul>
+                        </nav>
 
-                            {% if vehicles.has_next %}
-                            <li class="page-item">
-                                <a class="page-link" href="?v_page={{vehicles.next_page_number}}">Next</a>
-                            </li>
-                            {% else %}
-                            <li class="page-item">
-                                <a class="page-link disabled" >Next</a>
-                            </li>
-                            {% endif %}
-                        </ul>
-                    </nav>
+                    </div>
+                    
 
                 </div>
             </div>
