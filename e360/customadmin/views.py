@@ -44,37 +44,7 @@ def admin_panel(request,*args, **kwargs):
     }
     return render(request,'admin/admin_panel.html',context=context,status=200)
 
-# Finance
-def financial(request):
-    # Loans
-    loan_list=Loan.objects.all()
 
-    loan_p=Paginator(Loan.objects.all(),10)
-    loan_page=request.GET.get('l_page')
-    loans=loan_p.get_page(loan_page)
-
-    # Equipment w/ loan
-    equipment_loan_list=Equipment.objects.exclude(contract_id__isnull=True)
-
-    equip_p = Paginator(Equipment.objects.exclude(contract_id__isnull=True), 10)
-    equip_page = request.GET.get('e_page')
-    equipments = equip_p.get_page(equip_page)
-    # Vehicles w/ loan
-    vehicle_loan_list=Vehicle.objects.exclude(contract_id__isnull=True)
-
-    vehicle_p = Paginator(Vehicle.objects.exclude(contract_id__isnull=True), 10)
-    vehicle_page = request.GET.get('v_page')
-    vehicles = vehicle_p.get_page(vehicle_page)
-
-    context={
-        'loan_list':loan_list,
-        'loans':loans,
-        'equipment_loan_list':equipment_loan_list,
-        'equipments':equipments,
-        'vehicle_loan_list':vehicle_loan_list,
-        'vehicles':vehicles
-    }
-    return render(request, 'admin/dashboards/financial.html',context=context,status=200)
 
 class LoanCreate(LoginRequiredMixin,CreateView):
     model = Loan

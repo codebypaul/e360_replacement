@@ -204,18 +204,18 @@ Admin Panel
                                 </thead>
                                 <tbody>
                                     {% for vehicle in vehicles %}
-                                    <tr>
+                                    <tr>                                         
                                         <th scope="row">{{vehicle.equipment_id}}</th>
-                                            <td>{{vehicle.vin}}</td>
-                                            <td>{{vehicle.year}}</td>
-                                            <td>{{vehicle.description}}</td>
-                                            <!-- <td>{{vehicle.ownership}}</td>
-                                            <td>{{vehicle.mileage}}</td>
-                                            <td>{{vehicle.contract_id}}</td> -->
+                                        <td>{{vehicle.vin}}</td>
+                                        <td>{{vehicle.year}}</td>
+                                        <td>{{vehicle.description}}</td>
+                                        <!-- <td>{{vehicle.ownership}}</td>
+                                        <td>{{vehicle.mileage}}</td>
+                                        <td>{{vehicle.contract_id}}</td> -->
                                     </tr>
                                     {% endfor %}
                                 </tbody>
-                              </table>
+                            </table>
                             
                         </div>
                         <div class="card-footer">

@@ -37,10 +37,11 @@ def equipment_dash(request):
 def vehicle_dash(request):
     vehicle_list=Vehicle.objects.all()
 
-    vehicle_p = Paginator(Vehicle.objects.all(), 20)
+    vehicle_p = Paginator(Vehicle.objects.all(), 15)
     vehicle_page = request.GET.get('v_page')
     vehicles = vehicle_p.get_page(vehicle_page)
 
+    # print(request.GET.get('count_filter'))
     context={
         'vehicle_list':vehicle_list,
         'vehicles':vehicles

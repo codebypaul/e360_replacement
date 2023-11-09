@@ -23,5 +23,5 @@ urlpatterns = [
     path('administrator/', include('customadmin.urls')),
     path('', include('front_end.urls')),
     path('assets/', include('asset.urls')),
-    # path('assets/', include('asset.urls')),
+    path('financial/', include('finance.urls')),
 ]

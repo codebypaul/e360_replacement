@@ -117,8 +117,9 @@ Dashboard : Financial
                                             {% endif %}
 
                                             {{loan.lender}}
+                                            
                                         </th>
-                                        <td>{{loan.contract_number}}</td>
+                                        <td><a href="{% url 'loan detail' loan.contract_id %}">{{loan.contract_number}}</a></td>
                                         <td>{{loan.monthly_payment}}</td>
                                         <td>{{loan.financed_amount}}</td>
                                         <td>{{loan.loan_term}}</td>
