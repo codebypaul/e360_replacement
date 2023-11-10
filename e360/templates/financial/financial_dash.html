@@ -78,6 +78,7 @@ Dashboard : Financial
 
         <div class="col-10">
             <h1>Financial Dashboard</h1>
+
             <div class="row mb-5">
                 <div class="col">
                     <div class="card">
@@ -167,8 +168,10 @@ Dashboard : Financial
                     </div>
                 </div>
             </div>
+
             <div class="row mb-5">
-                <div class="col-6">
+                <!-- <div class="col-6"> -->
+                <div class="col">
                     <div class="card">
                         <div class="card-header">Equipment w/ Loans</div>
                         <div class="card-body">
@@ -230,9 +233,16 @@ Dashboard : Financial
                         </div>
                     </div>
                 </div>
-                <div class="col-6">
+            </div>
+
+            <div class="row">
+
+                <div class="col">
+
                     <div class="card">
+
                         <div class="card-header">Vehicles w/ Loans</div>
+
                         <div class="card-body">
                             <table class="table table-striped table-hover">
                                 <thead>
@@ -241,8 +251,8 @@ Dashboard : Financial
                                         <!-- <th scope="col">VIN</th> -->
                                         <th scope="col">Year</th>
                                         <th scope="col">Description</th>
-                                        <!-- <th scope="col">Ownership</th>
-                                        <th scope="col">Mileage</th> -->
+                                        <th scope="col">Payoff</th>
+                                        <th scope="col">Fair Market Value</th>
                                         <th scope="col">Contract</th>
                                     </tr>
                                 </thead>
@@ -253,14 +263,22 @@ Dashboard : Financial
                                             <!-- <td>{{vehicle.vin}}</td> -->
                                             <td>{{vehicle.year}}</td>
                                             <td>{{vehicle.description}}</td>
-                                            <!-- <td>{{vehicle.ownership}}</td>
-                                            <td>{{vehicle.mileage}}</td> -->
+                                            <td>
+                                                {% if vehicle.vehiclepayoff.payoff_amount != Null %}
+                                                
+                                                {{ vehicle.vehiclepayoff.payoff_amount | format_currency('USD') }}
+                                                {% else %}
+                                                Owned
+                                                {% endif %}
+                                            </td>
+                                            <td>{{vehicle.vehiclepayoff.fair_market_value}}</td>
                                             <td>{{vehicle.contract}}</td>
                                     </tr>
                                     {% endfor %}
                                 </tbody>
-                              </table>
+                            </table>
                         </div>
+
                         <div class="card-footer">
                             <nav aria-label="...">
                                 <ul class="pagination">
@@ -296,9 +314,12 @@ Dashboard : Financial
                                 </ul>
                             </nav>
                         </div>
+
                     </div>
                 </div>
+
             </div>
+            
         </div>
     </div>
 </div>

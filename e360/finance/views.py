@@ -42,7 +42,7 @@ def financial(request):
         'vehicle_loan_list':vehicle_loan_list,
         'vehicles':vehicles
     }
-    return render(request, 'admin/dashboards/financial.html',context=context,status=200)
+    return render(request, 'financial/financial_dash.html',context=context,status=200)
 
 class LoanDetail(LoginRequiredMixin,DetailView):
     model = Loan
