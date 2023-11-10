@@ -88,7 +88,7 @@ Dashboard : Financial
                             </div>
                             <div class="">
                                 <form class="d-flex" role="search">
-                                    <input class="form-control me-2" type="search" placeholder="Search from {{loan_list.count}} loans" aria-label="Search">
+                                    <input class="form-control me-2" type="text" placeholder="Search from {{loan_list.count}} loans" name="loan_search" aria-label="Search" value="{{loan_search_input}}">
                                     <button class="btn btn-outline-success" type="submit">Search</button>
                                   </form>
                             </div>
@@ -265,8 +265,7 @@ Dashboard : Financial
                                             <td>{{vehicle.description}}</td>
                                             <td>
                                                 {% if vehicle.vehiclepayoff.payoff_amount != Null %}
-                                                
-                                                {{ vehicle.vehiclepayoff.payoff_amount | format_currency('USD') }}
+                                                {{ vehicle.vehiclepayoff.payoff_amount }}
                                                 {% else %}
                                                 Owned
                                                 {% endif %}

@@ -16,10 +16,15 @@ from django.core.paginator import Paginator
 def financial(request):
     # Loans
     loan_list=Loan.objects.all()
-
-    loan_p=Paginator(Loan.objects.all(),10)
-    loan_page=request.GET.get('l_page')
-    loans=loan_p.get_page(loan_page)
+    loan_search_input = request.GET.get('loan_search') or ''
+    if loan_search_input:
+        loan_p=Paginator(Loan.objects.filter(lender__icontains=loan_search_input),10)
+        loan_page=request.GET.get('l_page')
+        loans=loan_p.get_page(loan_page)
+    else:
+        loan_p=Paginator(Loan.objects.all(),10)
+        loan_page=request.GET.get('l_page')
+        loans=loan_p.get_page(loan_page)
 
     # Equipment w/ loan
     equipment_loan_list=Equipment.objects.exclude(contract_id__isnull=True)
