@@ -90,7 +90,7 @@ class Vehicle(models.Model):
     # id = models.CharField(primary_key=True, unique =True,blank=True,null=True)
     equipment_id = models.CharField(primary_key=True,max_length=10)
     status = models.CharField(blank=True,null=True,choices=statuses)
-    vin = models.CharField(max_length=17)
+    vin = models.CharField(max_length=17,unique=True)
     year = models.PositiveSmallIntegerField(null=True)
     description = models.CharField(max_length=100)
     # company_assign = models.CharField(max_length=30, choices=companies)
