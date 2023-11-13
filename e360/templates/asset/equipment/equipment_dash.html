@@ -43,7 +43,11 @@ Dashboard : Equipment
                                 <tbody>
                                     {% for equipment in equipments %}
                                     <tr>
-                                        <th scope="row">{{equipment.equipment_id}}</th>
+                                        <th scope="row">
+                                            <a href="{% url 'update equipment' equipment.equipment_id %}">
+                                                {{equipment.equipment_id}}
+                                            </a>
+                                        </th>
                                         <td>{{equipment.serial_number}}</td>
                                         <td>{{equipment.year}}</td>
                                         <td>{{equipment.description}}</td>

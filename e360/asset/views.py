@@ -1,4 +1,8 @@
 from django.shortcuts import render
+from django.views.generic.edit import UpdateView
+from django.urls import reverse_lazy
+# Authentication
+from django.contrib.auth.mixins import LoginRequiredMixin
 # Models
 from api.models import Equipment,Vehicle
 # Pagination
@@ -31,7 +35,15 @@ def equipment_dash(request):
         'equipment_list':equipment_list,
         'equipments':equipments
     }
-    return render(request, 'asset/equipment.html',context=context,status=200)
+    return render(request, 'asset/equipment/equipment_dash.html',context=context,status=200)
+
+class UpdateEquipment(LoginRequiredMixin,UpdateView):
+    model=Equipment
+    fields= '__all__'
+    # context_object_name='equipment'
+    template_name = 'asset/equipment/equipment.html'
+    success_url = reverse_lazy('equipment dash')
+
 
 # Vehicles
 def vehicle_dash(request):
@@ -46,4 +58,4 @@ def vehicle_dash(request):
         'vehicle_list':vehicle_list,
         'vehicles':vehicles
     }
-    return render(request, 'asset/vehicles.html',context=context,status=200)
+    return render(request, 'asset/vehicle/vehicles.html',context=context,status=200)

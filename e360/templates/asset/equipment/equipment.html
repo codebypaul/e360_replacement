@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col p-3">
+            <div class="card w-75 mx-auto">
+                <div class="card-header">
+                    <h2>Update : {{equipment.equipment_id}}</h2>
+                </div>
+                <div class="card-body p-4">
+                    <form action="">
+                        {% csrf_token %}
+                        
+                        <div class="input-group mb-4">
+                            <!-- <span class="input-group-text">First and last name</span> -->
+                            <input class="form-control" type="text" value="{{equipment.equipment_id}}" aria-label="Disabled input example" disabled readonly>
+                            <input class="form-control" type="text" value="{{equipment.serial_number}}" aria-label="Disabled input example" disabled readonly>
+                            <!-- Status -->
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>{{equipment.status}}</option>
+                                {% if equipment.status == 'Active' %}
+                                <option value="Inactive">Inactive</option>
+                                {% else %}
+                                <option value="Active">Active</option>
+                                {% endif %}
+                            </select>
+                        </div>
+
+                        <div class="input-group mb-4">
+                            <!-- <span class="input-group-text">First and last name</span> -->
+                            <input class="form-control" type="text" value="{{equipment.year}}" aria-label="Disabled input example" disabled readonly>
+                            <input class="form-control" type="text" value="{{equipment.ownership}}" aria-label="Disabled input example" disabled readonly>
+                        </div>
+
+                        <!-- Description -->
+                        <input class="form-control mb-4" type="text" value="{{equipment.description}}" aria-label="Disabled input example" disabled readonly>
+
+                        <!-- Hours -->
+                        
+                        <!-- Location -->
+                        <label for="exampleDataList" class="form-label">Location</label>
+                        <input class="form-control mb-4" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
+                        <datalist id="datalistOptions">
+                            
+                            <option value="San Francisco">
+
+                        </datalist>
+
+                        <div class="form-floating mb-4">
+                            <input type="text" class="form-control" id="floatingNotes" placeholder="{{equipment.notes}}">
+                            <label for="floatingNotes">Notes</label>
+                        </div>
+
+                        <div class="row">
+                            <div class="col d-flex justify-content-center">
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
