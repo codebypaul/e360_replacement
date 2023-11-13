@@ -35,7 +35,11 @@ Dashboard : Vehicles
                         <tbody>
                             {% for vehicle in vehicles %}
                             <tr>
-                                <th scope="row">{{vehicle.equipment_id}}</th>
+                                <th scope="row">
+                                    <a href="{% url 'update vehicle' vehicle.equipment_id%}">
+                                        {{vehicle.equipment_id}}
+                                    </a>
+                                </th>
                                 <td>
                                     <select name="" id="">
                                         <option value="">{{vehicle.driver}}</option>

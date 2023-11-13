@@ -58,4 +58,11 @@ def vehicle_dash(request):
         'vehicle_list':vehicle_list,
         'vehicles':vehicles
     }
-    return render(request, 'asset/vehicle/vehicles.html',context=context,status=200)
+    return render(request, 'asset/vehicle/vehicle_dash.html',context=context,status=200)
+
+class UpdateVehicle(LoginRequiredMixin,UpdateView):
+    model=Vehicle
+    fields= '__all__'
+    # context_object_name='equipment'
+    template_name = 'asset/vehicle/vehicle.html'
+    success_url = reverse_lazy('vehicle dash')
