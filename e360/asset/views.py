@@ -60,6 +60,13 @@ def vehicle_dash(request):
     }
     return render(request, 'asset/vehicle/vehicle_dash.html',context=context,status=200)
 
+def updateVehicle(request,equipment_id):
+    vehicle=Vehicle.objects.get(equipment_id=equipment_id)
+    context={
+        'vehicle':vehicle
+    }
+    return render(request,'asset/vehicle/vehicle.html',context=context, status=200)
+
 class UpdateVehicle(LoginRequiredMixin,UpdateView):
     model=Vehicle
     fields= '__all__'

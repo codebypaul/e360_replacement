@@ -70,3 +70,7 @@ def employees(request):
         'vehicles':vehicles
     }
     return render(request, 'admin/dashboards/vehicles.html',context=context,status=200)
+
+# Documentation
+def documentation(request):
+    return render(request,'admin/documentation.html')

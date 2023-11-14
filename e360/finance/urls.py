@@ -1,11 +1,10 @@
 from django.urls import path
 from . import views
-from .views import LoanDetail
-
+from django.contrib.auth.decorators import login_required
 
 urlpatterns=[
     
-    path('finance-dashboard/', views.financial,name='finance dash'),
-    path('loan/<int:pk>',LoanDetail.as_view(), name='loan detail'),
+    path('finance-dashboard/', login_required(views.financial),name='finance dash'),
+    path('loan/<int:loan_id>',login_required(views.loanDetail), name='loan detail'),
 
 ]

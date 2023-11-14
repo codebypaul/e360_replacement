@@ -3,38 +3,64 @@
 {% block head_title %} {% endblock head_title %}
 
 {% block content %}
-<div class="countainer-fluid">
+<div class="container-fluid">
     <div class="row">
-        <div class="col-2">
 
+        <div class="col-2 overflow-auto">
+            <ul class="list-group list-group-flush">
+                {% for loan in loans %}
+                <li class="list-group-item"><a href="{% url 'loan detail' loan.contract_id %}">{{loan}}</a></li>
+                {% endfor %}
+            </ul>
         </div>
-        <div class="col-10">
 
-            <div class="row">
-                <div class="col">
-                    <div class="card">
-                        <div class="card-header">
-                            <h2>{{loan}}</h2>
+        <div class="col-10 mb-5">
+            <div class="card w-75 mx-auto mt-5">
+                <div class="card-header">
+                    <h2>
+                        {{loan}} {{loan.loan_status}}
+                    </h2>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-3">
+                            Debtor
+                            <br>
+                            Financed Amount
+                            <br>
+                            Interest Rate
+                            <br>
+                            Loan Term
                         </div>
-                        <div class="card-body">
-                            {{loan.lender}}
-                            <br>
+                        <div class="col-9">
                             {{loan.owned_company}}
-                            <br>
-                            {{loan.contract_number}}
                             <br>
                             {{loan.financed_amount}}
                             <br>
                             {{loan.interest_rate}}%
                             <br>
                             {{loan.loan_term}} months
-                            <br>
-                            {{loan.loan_status}}
                         </div>
-                    </div>
+                    </div>   
+                    <hr>
+                    <h4>Assets on this Loan</h4>
+                    <ul class="list-group list-group-flush">
+                        {% if equipment %}
+                            {% for equip in equipment %}
+                            <li class="list-group-item">{{equip.equipment_id}} | {{equip.year}} | {{equip.description}}</li>
+                            {% endfor %}
+                        {% endif %}
+                        {% if vehicles %}
+                            {% for vehicle in vehicles %}
+                                <li class="list-group-item">{{vehicle.equipment_id}} | {{vehicle.year}} | {{vehicle.description}}</li>
+                            {% endfor %}
+                        {% endif %}
+                    </ul>
+
                 </div>
             </div>
         </div>
+        
     </div>
 </div>
 {% endblock content %}

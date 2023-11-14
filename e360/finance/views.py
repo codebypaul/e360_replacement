@@ -49,7 +49,18 @@ def financial(request):
     }
     return render(request, 'financial/financial_dash.html',context=context,status=200)
 
-class LoanDetail(LoginRequiredMixin,DetailView):
-    model = Loan
-    context_object_name = 'loan'
-    template_name = 'financial/loan.html'
+# Loan Detail
+def loanDetail(request, loan_id):
+    loan = Loan.objects.get(pk=loan_id)
+    loans = Loan.objects.all()
+    equipment=Equipment.objects.filter(contract_id=loan_id)
+    vehicles=Vehicle.objects.filter(contract_id=loan_id)    
+    print(vehicles)
+    context={
+        'loan':loan,
+        'loans':loans,
+        'equipment':equipment,
+        'vehicles':vehicles
+    }
+    return render(request, 'financial/loan.html',context=context,status=200)
+
