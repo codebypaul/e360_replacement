@@ -47,13 +47,17 @@ class UpdateEquipment(LoginRequiredMixin,UpdateView):
 
 # Vehicles
 def vehicle_dash(request):
-    vehicle_list=Vehicle.objects.all()
+    search_input=request.GET.get('search-input') or ''
 
-    vehicle_p = Paginator(Vehicle.objects.all(), 15)
+    vehicle_list=Vehicle.objects.all()
+    search_vehicles = Vehicle.objects.filter(equipment_id__icontains=search_input) or Vehicle.objects.filter(description__icontains=search_input)
+
+    vehicle_p = Paginator(search_vehicles, 15)
     vehicle_page = request.GET.get('v_page')
     vehicles = vehicle_p.get_page(vehicle_page)
 
     # print(request.GET.get('count_filter'))
+    
     context={
         'vehicle_list':vehicle_list,
         'vehicles':vehicles
