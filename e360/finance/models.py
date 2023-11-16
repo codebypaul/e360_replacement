@@ -31,15 +31,22 @@ class VehiclePayoff(models.Model):
     class Meta:
         ordering =['vehicle']
 class LenderLogin(models.Model):
-    lender=models.OneToOneField(Loan,on_delete=models.DO_NOTHING)
-    website=models.URLField()
-    username=models.CharField()
-    password=models.CharField()
-    customer_serv_num=models.CharField(max_length=10)
-    mfa_num=models.CharField(max_length=10)
-    security_one=models.CharField()
-    answer_one=models.CharField()
-    security_two=models.CharField()
-    answer_two=models.CharField()
-    security_three=models.CharField()
-    answer_three=models.CharField()
+    lender=models.CharField(null=True,blank=True)
+    website=models.URLField(null=True,blank=True)
+    username=models.CharField(null=True,blank=True)
+    password=models.CharField(null=True,blank=True)
+    customer_serv_num=models.CharField(max_length=10,null=True,blank=True)
+    mfa_num=models.CharField(max_length=10,null=True,blank=True)
+    security_one=models.CharField(null=True,blank=True)
+    answer_one=models.CharField(null=True,blank=True)
+    security_two=models.CharField(null=True,blank=True)
+    answer_two=models.CharField(null=True,blank=True)
+    security_three=models.CharField(null=True,blank=True)
+    answer_three=models.CharField(null=True,blank=True)
+
+    def __str__(self):
+        return f'{self.lender} - {self.username}'
+    
+    class Meta:
+        ordering=['lender']
+    

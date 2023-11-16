@@ -20,7 +20,11 @@ Dashboard : Vehicles
                 </div>
 
                 <div class="card-body">
-
+                    <div class="row">
+                        <div class="col">
+                            
+                        </div>
+                    </div>
                     <table class="table">
                         <thead>
                             <tr>
@@ -28,6 +32,7 @@ Dashboard : Vehicles
                                 <th scope="col">Driver</th>
                                 <th scope="col">Year</th>
                                 <th scope="col">Description</th>
+                                <th scope="col">VIN</th>
                                 <th scope="col">Mileage</th>
                             </tr>
                         </thead>
@@ -41,13 +46,12 @@ Dashboard : Vehicles
                                     </a>
                                 </th>
                                 <td>
-                                    <select name="" id="">
-                                        <option value="">{{vehicle.driver}}</option>
-                                    </select>
+                                    {{vehicle.driver}}
                                     
                                 </td>
                                 <td>{{vehicle.year}}</td>
                                 <td>{{vehicle.description}}</td>
+                                <td>{{vehicle.vin}}</td>
                                 <td>{{vehicle.mileage }}</td>
                             </tr>
                             {% endfor %}
@@ -58,7 +62,7 @@ Dashboard : Vehicles
 
                 <div class="card-footer d-flex justify-content-between">
                     <div>
-                        Future Filter Count
+                        Showing {{vehicles.start_index}} - {{vehicles.end_index}} of {{vehicle_list.count}} vehicles
                     </div>
 
                     <div>

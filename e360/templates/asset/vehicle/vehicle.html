@@ -39,13 +39,14 @@
                         <!-- Hours -->
                         
                         <!-- Location -->
-                        <label for="exampleDataList" class="form-label">Location</label>
-                        <input class="form-control mb-4" list="datalistOptions" id="exampleDataList" placeholder="{{vehicle.driver}}">
-                        <datalist id="datalistOptions">
-                            
-                            <option value="San Francisco">
-
-                        </datalist>
+                        <label for="exampleDataList" class="form-label">Driver</label>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>{{vehicle.driver}}</option>
+                            {% for employee in employees %}
+                            <option value="{{employee.id}}">{{employee.first_name}} {{employee.last_name}}</option>
+                            {% endfor %}
+                        </select>
+                        
 
                         <div class="form-floating mb-4">
                             <input type="text" class="form-control" id="floatingNotes" placeholder="{{vehicle.notes}}">

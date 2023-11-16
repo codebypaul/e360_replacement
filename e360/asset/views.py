@@ -5,6 +5,7 @@ from django.urls import reverse_lazy
 from django.contrib.auth.mixins import LoginRequiredMixin
 # Models
 from api.models import Equipment,Vehicle
+from django.contrib.auth.models import User
 # Pagination
 from django.core.paginator import Paginator
 
@@ -50,24 +51,28 @@ def vehicle_dash(request):
     search_input=request.GET.get('search-input') or ''
 
     vehicle_list=Vehicle.objects.all()
-    search_vehicles = Vehicle.objects.filter(equipment_id__icontains=search_input) or Vehicle.objects.filter(description__icontains=search_input)
+    search_vehicles = Vehicle.objects.filter(equipment_id__icontains=search_input) or Vehicle.objects.filter(description__icontains=search_input) or Vehicle.objects.filter(vin__icontains=search_input)
 
     vehicle_p = Paginator(search_vehicles, 15)
     vehicle_page = request.GET.get('v_page')
     vehicles = vehicle_p.get_page(vehicle_page)
 
+    
     # print(request.GET.get('count_filter'))
     
     context={
         'vehicle_list':vehicle_list,
-        'vehicles':vehicles
+        'vehicles':vehicles,
     }
     return render(request, 'asset/vehicle/vehicle_dash.html',context=context,status=200)
 
 def updateVehicle(request,equipment_id):
     vehicle=Vehicle.objects.get(equipment_id=equipment_id)
+    employees=User.objects.all()
+    print(employees)
     context={
-        'vehicle':vehicle
+        'vehicle':vehicle,
+        'employees':employees,
     }
     return render(request,'asset/vehicle/vehicle.html',context=context, status=200)
 
