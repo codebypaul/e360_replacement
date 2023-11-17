@@ -8,6 +8,19 @@ This will be a web application that tracks the equipment and vehicles previously
     - Summary Page
     - 
 
+## Models
+    Asset
+    - Equipment
+    - Vehicles
+    - Location
+    
+    Admin
+    - Profile (Employee, connects to built in User model)
+
+    Finance
+    - Loan
+
+
 # Stretch Goals
 - Show all available equipment IDs
     - Will need to make all active equipment IDs invalid choices
