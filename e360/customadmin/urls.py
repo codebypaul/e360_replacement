@@ -11,5 +11,5 @@ urlpatterns = [
     
     path('new-loan/',LoanCreate.as_view(),name='add new loan'),
     # Documentation
-    path('documentation',login_required(views.documentation), name='documentation')
+    path('documentation',views.documentation, name='documentation')
 ]

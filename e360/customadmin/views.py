@@ -5,6 +5,7 @@ from django.urls import reverse_lazy
 
 # Authentication
 from django.contrib.auth.mixins import LoginRequiredMixin
+from django.contrib.auth.decorators import login_required
 
 # models
 from asset.models import Equipment, Vehicle
@@ -16,6 +17,7 @@ from django.core.paginator import Paginator
 # Create your views here.
 
 # Admin only
+@login_required()
 def admin_panel(request,*args, **kwargs):
     # Employees
     employee_search=request.GET.get('employee-search') or ''
@@ -60,6 +62,7 @@ class LoanCreate(LoginRequiredMixin,CreateView):
 
 
 # Employees
+@login_required()
 def employees(request):
     # vehicle_list=Vehicle.objects.all()
 
@@ -74,5 +77,6 @@ def employees(request):
     return render(request, 'admin/dashboards/vehicles.html',context=context,status=200)
 
 # Documentation
+@login_required()
 def documentation(request):
     return render(request,'admin/documentation.html')

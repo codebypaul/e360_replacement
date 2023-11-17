@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.views.generic.edit import UpdateView
 from django.urls import reverse_lazy
-LOGIN_URL = reverse_lazy('login')
+
 # Authentication
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
@@ -14,7 +14,7 @@ from django.contrib.auth.models import User
 from django.core.paginator import Paginator
 
 # Create your views here.
-# @login_required()
+@login_required()
 def asset_dash(request):
 
     context={
@@ -23,6 +23,7 @@ def asset_dash(request):
     return render(request, 'asset/dashboard.html',context=context, status=200)
 
 # Equipment
+@login_required()
 def equipment_dash(request):
     equipment_list=Equipment.objects.all()
 
@@ -45,6 +46,7 @@ class UpdateEquipment(LoginRequiredMixin,UpdateView):
 
 
 # Vehicles
+@login_required()
 def vehicle_dash(request):
     search_input=request.GET.get('search-input') or ''
 
@@ -64,6 +66,7 @@ def vehicle_dash(request):
     }
     return render(request, 'asset/vehicle/vehicle_dash.html',context=context,status=200)
 
+@login_required()
 def updateVehicle(request,equipment_id):
     vehicle=Vehicle.objects.get(equipment_id=equipment_id)
     employees=User.objects.all()

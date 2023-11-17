@@ -6,7 +6,7 @@ from django.urls import reverse_lazy
 from django.contrib.auth.views import LoginView
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth.forms import UserCreationForm
-from django.contrib.auth import login
+from django.contrib.auth.decorators import login_required
 
 # models
 from asset.models import Equipment, Vehicle
@@ -29,6 +29,7 @@ class CustomLoginView(LoginView):
         return reverse_lazy('system home page')
 
 # Authenticated User View
+@login_required()
 def system(request):
     equipment_list = Equipment.objects.all()
     vehicle_list = Vehicle.objects.all()
@@ -50,6 +51,7 @@ def system(request):
     }
 
     return render(request, 'pages/system.html', context = context, status = 200)
+
 
 def equipment_list(request):
     """

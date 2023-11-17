@@ -14,14 +14,14 @@ Dashboard : Financial
                 <div class="accordion-item">
                   <h2 class="accordion-header">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                      Accordion Item #1
+                      Loans
                     </button>
                   </h2>
                   <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">
                         <ul class="list-group list-group-flush">
-                            <li class="list-group-item">An item</li>
-                            <li class="list-group-item">A second item</li>
+                            <li class="list-group-item"><a href="{% url 'add new loan' %}">Add New Loan</a></li>
+                            <li class="list-group-item"><a href="{% url 'liquidation' %}">Liquidation</a></li>
                             <li class="list-group-item">A third item</li>
                             <li class="list-group-item">A fourth item</li>
                             <li class="list-group-item">And a fifth one</li>
@@ -67,7 +67,7 @@ Dashboard : Financial
                   </div>
                 </div> -->
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item"><a href="{% url 'add new loan' %}">Add New Loan</a></li>
+                    
                     <li class="list-group-item">A second item</li>
                     <li class="list-group-item">A third item</li>
                     <li class="list-group-item">A fourth item</li>
