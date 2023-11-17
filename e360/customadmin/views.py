@@ -2,10 +2,13 @@ from django.shortcuts import render
 from django.views.generic.detail import DetailView
 from django.views.generic.edit import CreateView, UpdateView, DeleteView, FormView
 from django.urls import reverse_lazy
+
 # Authentication
 from django.contrib.auth.mixins import LoginRequiredMixin
+
 # models
-from api.models import Equipment, Vehicle, Loan
+# from asset.models import Equipment, Vehicle
+from finance.models import Loan
 from django.contrib.auth.models import User
 
 # Pagination
@@ -21,30 +24,28 @@ def admin_panel(request,*args, **kwargs):
     employ_page = request.GET.get('emp_page')
     employees = employ_p.get_page(employ_page)
     #  Equipment
-    equipment_list = Equipment.objects.all()
+    # equipment_list = Equipment.objects.all()
 
-    equip_p = Paginator(Equipment.objects.all(), 15)
-    equip_page = request.GET.get('e_page')
-    equipments = equip_p.get_page(equip_page)
+    # equip_p = Paginator(Equipment.objects.all(), 15)
+    # equip_page = request.GET.get('e_page')
+    # equipments = equip_p.get_page(equip_page)
 
     # Vehicles
-    vehicle_list = Vehicle.objects.all()
+    # vehicle_list = Vehicle.objects.all()
 
-    vehicle_p = Paginator(Vehicle.objects.all(), 15)
-    vehicle_page = request.GET.get('v_page')
-    vehicles = vehicle_p.get_page(vehicle_page)
+    # vehicle_p = Paginator(Vehicle.objects.all(), 15)
+    # vehicle_page = request.GET.get('v_page')
+    # vehicles = vehicle_p.get_page(vehicle_page)
 
     context={
         'employee_list':employee_list,
         'employees':employees,
-        'equipment_list':equipment_list,
-        'equipments':equipments,
-        'vehicle_list':vehicle_list,
-        'vehicles':vehicles
+        # 'equipment_list':equipment_list,
+        # 'equipments':equipments,
+        # 'vehicle_list':vehicle_list,
+        # 'vehicles':vehicles
     }
     return render(request,'admin/admin_panel.html',context=context,status=200)
-
-
 
 class LoanCreate(LoginRequiredMixin,CreateView):
     model = Loan
@@ -56,18 +57,17 @@ class LoanCreate(LoginRequiredMixin,CreateView):
         return super(LoanCreate, self).form_valid(form)
 
 
-
 # Employees
 def employees(request):
-    vehicle_list=Vehicle.objects.all()
+    # vehicle_list=Vehicle.objects.all()
 
-    vehicle_p = Paginator(Vehicle.objects.all(), 10)
-    vehicle_page = request.GET.get('v_page')
-    vehicles = vehicle_p.get_page(vehicle_page)
+    # vehicle_p = Paginator(Vehicle.objects.all(), 10)
+    # vehicle_page = request.GET.get('v_page')
+    # vehicles = vehicle_p.get_page(vehicle_page)
 
     context={
-        'vehicle_list':vehicle_list,
-        'vehicles':vehicles
+        # 'vehicle_list':vehicle_list,
+        # 'vehicles':vehicles
     }
     return render(request, 'admin/dashboards/vehicles.html',context=context,status=200)
 

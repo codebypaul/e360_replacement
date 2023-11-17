@@ -2,7 +2,8 @@ from django.shortcuts import render
 from django.views.generic.detail import DetailView
 
 # Models
-from api.models import Loan, Equipment, Vehicle
+from .models import Loan
+# from asset.models import Equipment, Vehicle
 
 # Authentication
 from django.contrib.auth.mixins import LoginRequiredMixin

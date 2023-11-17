@@ -9,7 +9,7 @@ from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth import login
 
 # models
-from api.models import Equipment, Vehicle
+# from asset.models import Equipment, Vehicle
 
 # Pagination
 from django.core.paginator import Paginator
