@@ -3,6 +3,7 @@ from . import views
 from .views import UpdateEquipment, UpdateVehicle
 
 urlpatterns = [
+    path('',views.asset_dash,name='asset dash'),
     # Equipment
     path('equipment-dash/',views.equipment_dash,name='equipment dash'),
     path('equipment-update/<str:pk>',UpdateEquipment.as_view(),name='update equipment'),
