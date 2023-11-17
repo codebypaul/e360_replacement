@@ -1,5 +1,5 @@
 from django.db import models
-from asset.models import Equipment
+
 
 # Create your models here.
 class Loan(models.Model):
@@ -29,7 +29,7 @@ class Loan(models.Model):
         ordering=['lender','contract_number']
 
 class EquipPayoff(models.Model):
-    # equipment =  models.OneToOneField(Equipment,null=True,on_delete=models.CASCADE)  
+    equipment =  models.OneToOneField('asset.Equipment',null=True,on_delete=models.CASCADE)  
     payoff_amount = models.FloatField(null=True,blank=True)
     as_of_date = models.DateField(null=True,blank=True)
     fair_market_value = models.IntegerField(null=True,blank=True)
@@ -37,23 +37,23 @@ class EquipPayoff(models.Model):
     # price_sold = models.IntegerField
     # date_sold = models.DateField
 
-    # def __str__(self):
-    #     return self.equipment.equipment_id
+    def __str__(self):
+        return self.equipment.equipment_id
     
-    # class Meta:
-    #     ordering =['equipment']
+    class Meta:
+        ordering =['equipment']
 
 class VehiclePayoff(models.Model):  
-    # vehicle = models.OneToOneField(Vehicle,db_column='vehicle_id',null=True,on_delete=models.CASCADE) 
+    vehicle = models.OneToOneField('asset.Vehicle',db_column='vehicle_id',null=True,on_delete=models.CASCADE) 
     payoff_amount = models.FloatField(null=True,blank=True)
     as_of_date = models.DateField(null=True,blank=True)
     fair_market_value = models.IntegerField(null=True,blank=True)
 
-    # def __str__(self):
-    #     return self.vehicle.equipment_id
+    def __str__(self):
+        return self.vehicle.equipment_id
     
-    # class Meta:
-    #     ordering =['vehicle']
+    class Meta:
+        ordering =['vehicle']
         
 class LenderLogin(models.Model):
     lender=models.CharField(null=True,blank=True)

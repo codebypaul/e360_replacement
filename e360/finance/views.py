@@ -3,7 +3,7 @@ from django.views.generic.detail import DetailView
 
 # Models
 from .models import Loan
-# from asset.models import Equipment, Vehicle
+from asset.models import Equipment, Vehicle
 
 # Authentication
 from django.contrib.auth.mixins import LoginRequiredMixin

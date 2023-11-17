@@ -7,7 +7,7 @@ from django.urls import reverse_lazy
 from django.contrib.auth.mixins import LoginRequiredMixin
 
 # models
-# from asset.models import Equipment, Vehicle
+from asset.models import Equipment, Vehicle
 from finance.models import Loan
 from django.contrib.auth.models import User
 
