@@ -274,7 +274,7 @@ Admin Panel
                         <div class="card-header d-flex justify-content-between">
                             <h3>Employees</h3>
                             <form class="d-flex" role="search">
-                                <input class="form-control me-2" type="search" placeholder="Search {{employee_list.count}} employees" aria-label="Search">
+                                <input class="form-control me-2" type="search" placeholder="Search {{employee_list.count}} employees" aria-label="Search" name="employee-search">
                                 <button class="btn btn-outline-success" type="submit">Search</button>
                             </form>
                         </div>
@@ -283,8 +283,8 @@ Admin Panel
                                 <thead>
                                   <tr>
                                     <!-- <th scope="col">Employee ID</th> -->
-                                    <th scope="col">First</th>
                                     <th scope="col">Last</th>
+                                    <th scope="col">First</th>
                                     <th scope="col">Title</th>
                                     <!-- <th scope="col">Phone Number</th> -->
                                     <th scope="col">Current Tasks</th>
@@ -295,8 +295,8 @@ Admin Panel
                                     {%for employee in employees %}
                                     <tr>
                                         <!-- <th scope="row">{{employee.profile.employee_id}}</th> -->
-                                        <td>{{employee.first_name}}</td>
                                         <td>{{employee.last_name}}</td>
+                                        <td>{{employee.first_name}}</td>
                                         <td>{{employee.profile.title}}</td>
                                         <!-- <td>{{employee.profile.phone_number}}</td> -->
                                         <td>0</td>
@@ -308,7 +308,7 @@ Admin Panel
                         </div>
                         <div class="card-footer">
 
-
+                            
 
                         </div>
                     </div>

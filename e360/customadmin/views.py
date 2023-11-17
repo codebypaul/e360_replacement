@@ -18,32 +18,34 @@ from django.core.paginator import Paginator
 # Admin only
 def admin_panel(request,*args, **kwargs):
     # Employees
-    employee_list=User.objects.all().order_by('last_name')   
+    employee_search=request.GET.get('employee-search') or ''
+    employee_lookup = User.objects.filter(first_name__icontains=employee_search) or User.objects.filter(last_name__icontains=employee_search)
+    employee_list=employee_lookup.order_by('last_name')   
 
-    employ_p = Paginator(User.objects.all().order_by('last_name'), 15)
+    employ_p = Paginator(employee_list, 15)
     employ_page = request.GET.get('emp_page')
     employees = employ_p.get_page(employ_page)
     #  Equipment
-    # equipment_list = Equipment.objects.all()
+    equipment_list = Equipment.objects.all()
 
-    # equip_p = Paginator(Equipment.objects.all(), 15)
-    # equip_page = request.GET.get('e_page')
-    # equipments = equip_p.get_page(equip_page)
+    equip_p = Paginator(Equipment.objects.all(), 15)
+    equip_page = request.GET.get('e_page')
+    equipments = equip_p.get_page(equip_page)
 
     # Vehicles
-    # vehicle_list = Vehicle.objects.all()
+    vehicle_list = Vehicle.objects.all()
 
-    # vehicle_p = Paginator(Vehicle.objects.all(), 15)
-    # vehicle_page = request.GET.get('v_page')
-    # vehicles = vehicle_p.get_page(vehicle_page)
+    vehicle_p = Paginator(Vehicle.objects.all(), 15)
+    vehicle_page = request.GET.get('v_page')
+    vehicles = vehicle_p.get_page(vehicle_page)
 
     context={
         'employee_list':employee_list,
         'employees':employees,
-        # 'equipment_list':equipment_list,
-        # 'equipments':equipments,
-        # 'vehicle_list':vehicle_list,
-        # 'vehicles':vehicles
+        'equipment_list':equipment_list,
+        'equipments':equipments,
+        'vehicle_list':vehicle_list,
+        'vehicles':vehicles
     }
     return render(request,'admin/admin_panel.html',context=context,status=200)
 
