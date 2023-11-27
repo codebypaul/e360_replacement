@@ -25,9 +25,13 @@ def asset_dash(request):
 # Equipment
 @login_required()
 def equipment_dash(request):
-    equipment_list=Equipment.objects.all()
+    search_input=request.GET.get('search-input') or ''
 
-    equip_p = Paginator(Equipment.objects.all(), 15)
+    search_equipment = Equipment.objects.filter(equipment_id__icontains=search_input) or Equipment.objects.filter(description__icontains=search_input) or Equipment.objects.filter(serial_number__icontains=search_input)
+
+    equipment_list=search_equipment
+
+    equip_p = Paginator(search_equipment, 15)
     equip_page = request.GET.get('e_page')
     equipments = equip_p.get_page(equip_page)
 
@@ -37,7 +41,7 @@ def equipment_dash(request):
     }
     return render(request, 'asset/equipment/equipment_dash.html',context=context,status=200)
 
-class UpdateEquipment(LoginRequiredMixin,UpdateView):
+class UpdateEquipment(UpdateView):
     model=Equipment
     fields= '__all__'
     # context_object_name='equipment'
@@ -78,7 +82,7 @@ def updateVehicle(request,equipment_id):
     return render(request,'asset/vehicle/vehicle.html',context=context, status=200)
 
 class UpdateVehicle(LoginRequiredMixin,UpdateView):
-    # model=Vehicle
+    model=Vehicle
     fields= '__all__'
     # context_object_name='equipment'
     template_name = 'asset/vehicle/vehicle.html'

@@ -20,7 +20,7 @@ Dashboard : Equipment
                         <div class="card-header d-flex justify-content-between">
                             <div class="">
                                 <form class="d-flex" role="search">
-                                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="search-input">
                                     <button class="btn btn-outline-success" type="submit">Search</button>
                                 </form>
                             </div>
@@ -75,10 +75,10 @@ Dashboard : Equipment
                                     </ul>
                                   </div>
                             </div> -->
-
+                            
                             <nav aria-label="Page navigation example">
+                                
                                 <ul class="pagination">
-
                                     {% if equipments.has_previous %}
                                     <li class="page-item"><a class="page-link" href="?e_page={{equipments.previous_page_number}}">Previous</a></li>
                                     {% else %}
@@ -98,7 +98,7 @@ Dashboard : Equipment
                                     {% else %}
                                     <li class="page-item"><a class="page-link disabled" href="">Next</a></li>
                                     {% endif %}
-
+                                    {{equipments.paginator.end_index}}
                                     
                                 </ul>
                             </nav>
